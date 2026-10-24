@@ -1,0 +1,12 @@
+{
+ "resource_id": "audit_record_3954",
+ "audit_at": "2026-09-15T12:00:00Z",
+ "turns": [
+  "search_evidence({\"query\": \"audit_record_3954\"})",
+  "search_evidence({\"query\": \"3954\"})",
+  "search_evidence({\"query\": \"security_service\"})",
+  "submit_none({\"reason\": \"No evidence found for audit_record_3954 in the available log files.\"})"
+ ],
+ "prompt_version": "0814411a5455",
+ "submission": null
+}

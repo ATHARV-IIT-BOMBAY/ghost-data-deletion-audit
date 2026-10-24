@@ -1,0 +1,12 @@
+{
+ "resource_id": "audit_record_7095",
+ "audit_at": "2026-09-15T12:00:00Z",
+ "turns": [
+  "search_evidence({\"query\": \"audit_record_7095\"})",
+  "search_evidence({\"query\": \"7095\"})",
+  "search_evidence({\"query\": \"security_service\"})",
+  "submit_none({\"reason\": \"No evidence found for audit_record_7095 in security_service files up to audit time 2026-09-15T12:00:00Z.\"})"
+ ],
+ "prompt_version": "0814411a5455",
+ "submission": null
+}

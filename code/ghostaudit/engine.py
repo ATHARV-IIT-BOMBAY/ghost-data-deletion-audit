@@ -15,6 +15,7 @@ from pathlib import Path
 
 from . import intent
 from .activity import explicit_links, load_activity
+from .agent import Investigator
 from .identity import IdentityIndex, Subject
 from .ingest import load_evidence
 from .models import Coverage, Observation, iso, system_for
@@ -81,7 +82,7 @@ class CaseResult:
 
 
 class Engine:
-    def __init__(self, dataset: Path, use_models: bool = True):
+    def __init__(self, dataset: Path, use_models: bool = True, use_agent: bool = True):
         self.dataset = dataset
         self.intent = intent.IntentClassifier(use_models)
         self.identity = IdentityIndex(dataset)
@@ -100,6 +101,7 @@ class Engine:
                 if not tok.startswith("name:"):
                     self.by_token[tok].add(o.resource_id)
         self.links = explicit_links(self.activity)
+        self.investigator = Investigator(dataset, self.captured, use_models and use_agent) if use_agent else None
         # JSON snapshot bundles are captured per subject group, not per system: an empty or
         # partial collection there proves absence only for the people that file is about.
         self.file_subjects: dict[str, frozenset[str]] = {}
@@ -278,6 +280,12 @@ class Engine:
             required, rule_id = req_state
             ok_states, finding, remediation, verification = TREATMENTS[required]
             latest, drifted = self.state_at(rid, audit_at, subject, ok_states)
+            if latest is None and self.investigator is not None:
+                found = self.investigator.investigate(rid, system_for(rid), requested_at, audit_at)
+                if found is not None:  # verified by code before it gets here (agent._verify)
+                    self.by_resource[rid].append(found)
+                    res.trace.append(f"{rid}: investigator found {found.state}@{found.file_id}")
+                    latest, drifted = self.state_at(rid, audit_at, subject, ok_states)
             if latest is None:
                 # Known to belong to the subject, state unknown at audit_at: it can only appear as a
                 # future verification check, which exists only when the case is INCOMPLETE.

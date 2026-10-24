@@ -5,10 +5,10 @@ deletion was actually requested, works out whether the person's data is really g
 `audit_at`, and writes the ordered findings, remediation and verification steps
 (`output.csv`: `case_id,deletion_status,steps_json`).
 
-**Results on the 32 labelled samples:** status accuracy 1.000 · step F1 0.946 (P 0.994, R 0.902) ·
-holdout F1 0.927 · every finding and remediation step correct · 0 contract violations · 6/6
-custom cases. The final 518-request run made 29 Gemini calls (62.7K tokens, ~$0.07 at list price,
-$0 billed on the free tier). Details: `code/evaluation/evaluation_report.md`, `code/evaluation/usage_report.md`.
+**Results on the 32 labelled samples:** status accuracy 1.000 · step F1 0.965 (P 0.995, R 0.938) ·
+holdout F1 0.952 · every finding and remediation step correct · 0 contract violations · 6/6
+custom cases · 31 unit tests. All model calls behind the submitted output: 189 Gemini calls
+(237.7K tokens, ~$0.13 at list price, $0 billed on the free tier); a rerun makes 0 calls. Details: `code/evaluation/evaluation_report.md`, `code/evaluation/usage_report.md`.
 
 ## How it works
 
@@ -26,6 +26,8 @@ linking       identifier matches + data-catalog events + deletion-workflow event
    ▼
 state         latest evidence ≤ audit_at per resource; claims (statuses, "completed") never count;
    │            absence proven by full listings; replica drift; findings need post-request evidence
+   │            no state found? → investigator agent (Gemini tool loop: search / read / submit quote,
+   │            ≤ 4 turns, ≤ 40 per run); code accepts only quotes that exist verbatim in visible files
    ▼
 policy        deletion_rules.csv → required final state (delete / redact / anonymize / retain /
    │            block restore / disable flow; tombstones keep only user_id)
@@ -36,11 +38,12 @@ planner       finding → remediation → verification per resource, canonical o
 **Where the model decides and where code enforces.** Models only *read*: request intent and
 screenshots. Every model answer goes through code:
 - intent: explicit "do not delete" wording always wins, and the model can only make a request non-deletion at confidence ≥ 0.8;
-- vision: the model returns ids, identifiers and the status words it sees; code maps status to state, rejects ids that aren't valid resource ids or that differ from a known id only by zero-padding, and escalates to a stronger model once if ids are missing.
+- vision: the model returns ids, identifiers and the status words it sees; code maps status to state, rejects ids that aren't valid resource ids or that differ from a known id only by zero-padding, and escalates to a stronger model once if ids are missing;
+- investigator (`code/ghostaudit/agent.py`): the model chooses its own tools to search and read raw evidence (only files dated ≤ `audit_at` are visible) and must finish with a verbatim quote; code checks the quote exists in that file, names the record and contains wording for the claimed state before the observation is used.
 
 Statuses, steps, states and evidence ids are produced only by deterministic code.
 `code/POLICY.md` is the rulebook (written before any code); `code/DECISIONS.md` is the
-timestamped decision log (D1–D23) with the measurement behind each change.
+timestamped decision log (D1–D28) with the measurement behind each change.
 
 ## Setup
 
@@ -81,6 +84,7 @@ python3 code/main.py                       # all 518 requests → ./output.csv
 | `--out PATH` | where to write the CSV (default `./output.csv`) |
 | `--trace PATH` | JSONL decision trace per case: subject, every linked resource, why, state and evidence |
 | `--no-models` | deterministic layer only (ablation; makes no API calls) |
+| `--no-agent` | disable only the investigator agent (ablation) |
 
 Each run also writes `code/evaluation/last_run_usage.json` (calls, tokens, cache hits per model and purpose).
 
@@ -96,7 +100,7 @@ python3 code/main.py --requests dataset/sample_deletion_requests.csv --out sampl
 python3 code/evaluation/main.py --pred sample_pred.csv -v       # --split dev | holdout
 python3 code/evaluation/main.py --baseline reported              # no-model baselines
 python3 code/evaluation/custom_cases.py                          # 6 custom cases
-python3 -m unittest discover -s code/tests -t code -v            # 25 unit tests, no API key, < 1 s
+python3 -m unittest discover -s code/tests -t code -v            # 31 unit tests, no API key, < 1 s
 ```
 
 ## Code map
@@ -112,6 +116,7 @@ python3 -m unittest discover -s code/tests -t code -v            # 25 unit tests
 | `code/ghostaudit/activity.py` | activity stream loader, data-catalog link events |
 | `code/ghostaudit/engine.py` | linking, workflow assignment, state at `audit_at`, plan |
 | `code/ghostaudit/policy.py` | rule table → required final state and step triple |
+| `code/ghostaudit/agent.py` | bounded tool-calling evidence investigator + code-side quote verification |
 | `code/ghostaudit/llm.py` | Gemini REST client: schema-constrained JSON, classified retries, rate pacing, usage accounting |
 | `code/evaluation/main.py` | scorer (written before the solver), baselines, dev/holdout |
 | `code/evaluation/custom_cases.py` | custom evaluation cases |
@@ -125,6 +130,7 @@ python3 -m unittest discover -s code/tests -t code -v            # 25 unit tests
   the main source of missed verification steps.
 - `resource_id` ordering inside a phase assumes string order (the samples never disambiguate).
 - Vision output was checked by eye on 2 screenshots; no labelled case cites a screenshot.
+- `.env` in the repo root is read automatically: to guarantee zero API calls, move it away (unsetting the shell variable is not enough) or rely on the caches.
 
 ## Packaging
 

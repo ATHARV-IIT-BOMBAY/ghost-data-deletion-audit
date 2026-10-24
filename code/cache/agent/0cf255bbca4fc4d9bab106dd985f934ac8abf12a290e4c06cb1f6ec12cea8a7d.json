@@ -1,0 +1,13 @@
+{
+ "resource_id": "audit_record_3698",
+ "audit_at": "2026-07-03T08:00:00Z",
+ "turns": [
+  "search_evidence({\"query\": \"audit_record_3698\"})",
+  "search_evidence({\"query\": \"3698\"})",
+  "search_evidence({\"query\": \"security_service\"})",
+  "read_evidence({\"file_id\": \"evidence_22\", \"around\": \"security_service\"})",
+  "iteration cap reached"
+ ],
+ "prompt_version": "0814411a5455",
+ "submission": null
+}

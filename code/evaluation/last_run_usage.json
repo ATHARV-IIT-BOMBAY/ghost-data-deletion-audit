@@ -2,42 +2,36 @@
  "requests": 518,
  "output": "output.csv",
  "models_enabled": true,
- "wall_seconds": 270.39,
+ "wall_seconds": 906.07,
  "ingest_problems": 0,
  "vision_rejections": 4,
+ "investigator": {
+  "investigated": 40,
+  "cache_hits": 0,
+  "accepted": 0,
+  "rejected": 0,
+  "none": 40,
+  "over_budget": 91,
+  "rejections": []
+ },
  "provider": "google-gemini",
- "calls": 29,
- "cache_hits": 0,
+ "calls": 160,
+ "cache_hits": 409,
  "failures": 0,
- "input_tokens": 40878,
- "output_tokens": 21867,
+ "input_tokens": 171356,
+ "output_tokens": 3602,
  "per_model": {
   "gemini-3.5-flash-lite": {
-   "calls": 27,
-   "input_tokens": 37834,
-   "output_tokens": 21722
-  },
-  "gemini-3.5-flash": {
-   "calls": 2,
-   "input_tokens": 3044,
-   "output_tokens": 145
+   "calls": 160,
+   "input_tokens": 171356,
+   "output_tokens": 3602
   }
  },
  "per_purpose": {
-  "vision": {
-   "calls": 11,
-   "input_tokens": 16614,
-   "output_tokens": 1889
-  },
-  "vision_escalation": {
-   "calls": 2,
-   "input_tokens": 3044,
-   "output_tokens": 145
-  },
-  "intent": {
-   "calls": 16,
-   "input_tokens": 21220,
-   "output_tokens": 19833
+  "investigator": {
+   "calls": 160,
+   "input_tokens": 171356,
+   "output_tokens": 3602
   }
  }
 }

@@ -1,0 +1,12 @@
+{
+ "resource_id": "legal_hold_4961",
+ "audit_at": "2026-07-03T08:00:00Z",
+ "turns": [
+  "search_evidence({\"query\": \"legal_hold_4961\"})",
+  "search_evidence({\"query\": \"4961\"})",
+  "search_evidence({\"query\": \"legal_service\"})",
+  "submit_none({\"reason\": \"No visible evidence shows the state of record legal_hold_4961 at the audit time.\"})"
+ ],
+ "prompt_version": "0814411a5455",
+ "submission": null
+}

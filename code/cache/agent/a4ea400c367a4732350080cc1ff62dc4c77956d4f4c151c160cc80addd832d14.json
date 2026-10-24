@@ -1,0 +1,12 @@
+{
+ "resource_id": "audit_record_3625",
+ "audit_at": "2026-07-23T12:00:00Z",
+ "turns": [
+  "search_evidence({\"query\": \"audit_record_3625\"})",
+  "search_evidence({\"query\": \"security_service\"})",
+  "search_evidence({\"query\": \"3625\"})",
+  "submit_none({\"reason\": \"No evidence found for audit_record_3625 in any files up to the audit time.\"})"
+ ],
+ "prompt_version": "0814411a5455",
+ "submission": null
+}

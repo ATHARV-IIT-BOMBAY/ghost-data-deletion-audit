@@ -1,0 +1,13 @@
+{
+ "resource_id": "audit_record_8457",
+ "audit_at": "2026-08-17T10:00:00Z",
+ "turns": [
+  "search_evidence({\"query\": \"audit_record_8457\"})",
+  "search_evidence({\"query\": \"8457\"})",
+  "search_evidence({\"query\": \"security_service\"})",
+  "read_evidence({\"around\": \"security_service\", \"file_id\": \"evidence_13\"})",
+  "iteration cap reached"
+ ],
+ "prompt_version": "0814411a5455",
+ "submission": null
+}

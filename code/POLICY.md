@@ -135,8 +135,12 @@ gone, remove leftover copies) **are** deletion. Order of authority (`intent.Inte
 
 ## 12. What models may and may not decide
 Models may: classify request intent (§9, `intent.py`); transcribe screenshots into resource ids,
-identifiers and status text (`ingest/media.py`), from which code derives the state. PDFs, SQL, JSON,
-logs and text are parsed by code only. Models may **not** emit steps, statuses, states or evidence
+identifiers and status text (`ingest/media.py`), from which code derives the state; investigate a
+linked record that no parsed evidence places at `audit_at` (`agent.py`: tool-calling loop over
+read-only, time-bounded search/read tools, ≤ `MAX_TOOL_ITERATIONS` turns, ≤ `MAX_INVESTIGATIONS` per
+run). The investigator's submission is accepted only if its quote exists verbatim in a file dated
+≤ `audit_at`, names the resource and contains wording for the claimed state (`agent._verify`).
+PDFs, SQL, JSON, logs and text are parsed by code only. Models may **not** emit steps, statuses, states or evidence
 ids. Every model-returned resource id must match a known resource family and must not be a
 zero-padding variant of a known id (`media._padding_error`); unparseable identifiers are rejected and
 reported.

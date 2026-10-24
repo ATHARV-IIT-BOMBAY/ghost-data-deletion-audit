@@ -77,8 +77,16 @@ class IntentClassifier:
         distinct = set(texts)
         todo = sorted(t for t in distinct if _key(t) not in self.cache)
         llm.USAGE.cache_hits += len(distinct) - len(todo)
-        for i in range(0, len(todo), BATCH_SIZE):
-            batch = todo[i:i + BATCH_SIZE]
+        self._classify(todo, BATCH_SIZE)
+        missing = [t for t in todo if _key(t) not in self.cache]
+        if missing:  # a batch answer skipped some ids: retry those once, in small batches
+            self._classify(missing, 5)
+        CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        self.cache_file.write_text(json.dumps(self.cache, indent=1, sort_keys=True), encoding="utf-8")
+
+    def _classify(self, todo: list[str], batch_size: int) -> None:
+        for i in range(0, len(todo), batch_size):
+            batch = todo[i:i + batch_size]
             listing = "\n".join(f"<request id={n}>{t}</request>" for n, t in enumerate(batch))
             try:
                 answer = llm.generate_json([{"text": listing}], SCHEMA, SYSTEM_PROMPT, purpose="intent")
@@ -88,8 +96,6 @@ class IntentClassifier:
             for n, t in enumerate(batch):
                 if n in by_id:
                     self.cache[_key(t)] = {k: by_id[n][k] for k in ("authorizes_deletion", "confidence", "reason")}
-        CACHE_DIR.mkdir(parents=True, exist_ok=True)
-        self.cache_file.write_text(json.dumps(self.cache, indent=1, sort_keys=True), encoding="utf-8")
 
     def authorizes_deletion(self, text: str) -> tuple[bool, str]:
         ok, why = rule_says(text)

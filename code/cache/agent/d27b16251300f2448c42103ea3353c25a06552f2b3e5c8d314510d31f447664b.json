@@ -1,0 +1,12 @@
+{
+ "resource_id": "audit_record_4902",
+ "audit_at": "2026-09-16T09:00:00Z",
+ "turns": [
+  "search_evidence({\"query\": \"audit_record_4902\"})",
+  "search_evidence({\"query\": \"4902\"})",
+  "search_evidence({\"query\": \"security_service\"})",
+  "submit_none({\"reason\": \"No evidence found referencing audit_record_4902 in any available log files or evidence stores.\"})"
+ ],
+ "prompt_version": "0814411a5455",
+ "submission": null
+}

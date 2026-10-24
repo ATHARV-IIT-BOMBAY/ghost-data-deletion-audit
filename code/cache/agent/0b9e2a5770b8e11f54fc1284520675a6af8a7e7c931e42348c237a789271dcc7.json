@@ -1,0 +1,12 @@
+{
+ "resource_id": "audit_record_6515",
+ "audit_at": "2026-06-28T07:00:00Z",
+ "turns": [
+  "search_evidence({\"query\": \"audit_record_6515\"})",
+  "search_evidence({\"query\": \"6515\"})",
+  "search_evidence({\"query\": \"security_service\"})",
+  "submit_none({\"reason\": \"No visible evidence shows the state of audit_record_6515 at the audit time.\"})"
+ ],
+ "prompt_version": "0814411a5455",
+ "submission": null
+}

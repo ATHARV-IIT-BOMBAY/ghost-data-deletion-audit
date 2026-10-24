@@ -1,0 +1,13 @@
+{
+ "resource_id": "audit_record_9833",
+ "audit_at": "2026-08-22T11:00:00Z",
+ "turns": [
+  "search_evidence({\"query\": \"audit_record_9833\"})",
+  "search_evidence({\"query\": \"9833\"})",
+  "search_evidence({\"query\": \"security_service\"})",
+  "search_evidence({\"query\": \"audit_record\"})",
+  "iteration cap reached"
+ ],
+ "prompt_version": "0814411a5455",
+ "submission": null
+}

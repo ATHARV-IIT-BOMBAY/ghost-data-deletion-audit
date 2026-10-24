@@ -91,20 +91,52 @@ def generate_json(parts: list[dict], schema: dict, system: str, model: str | Non
     `parts` are Gemini content parts (text / inline_data). `schema` constrains the output
     (responseSchema), so a malformed answer is an API-level failure, not a parsing guess.
     """
-    _load_dotenv()
-    key = os.environ.get("GEMINI_API_KEY")
-    if not key:
-        raise LLMUnavailable("GEMINI_API_KEY is not set")
     model = model or model_name()
-    body = json.dumps({
+    payload = _post(model, {
         "systemInstruction": {"parts": [{"text": system}]},
         "contents": [{"role": "user", "parts": parts}],
         "generationConfig": {"temperature": 0, "responseMimeType": "application/json",
                              "responseSchema": schema},
-    }).encode()
-    req = urllib.request.Request(API.format(model=model), data=body, method="POST",
+    }, purpose)
+    try:
+        text = payload["candidates"][0]["content"]["parts"][0]["text"]
+        return json.loads(text)
+    except (KeyError, IndexError, json.JSONDecodeError) as e:
+        USAGE.failures += 1
+        raise LLMUnavailable(f"unusable response from {model}: {str(payload)[:300]}") from e
+
+
+def generate_turn(contents: list[dict], tools: list[dict], system: str, purpose: str) -> dict:
+    """One turn of a function-calling conversation: returns the model's content (role + parts).
+
+    The caller appends that content unchanged (Gemini 3 models return thought signatures that
+    must be echoed back) plus its own functionResponse parts, then calls again.
+    """
+    model = model_name()
+    payload = _post(model, {
+        "systemInstruction": {"parts": [{"text": system}]},
+        "contents": contents,
+        "tools": [{"functionDeclarations": tools}],
+        "toolConfig": {"functionCallingConfig": {"mode": "ANY"}},  # every turn must call a tool
+        "generationConfig": {"temperature": 0},
+    }, purpose)
+    try:
+        return payload["candidates"][0]["content"]
+    except (KeyError, IndexError) as e:
+        USAGE.failures += 1
+        raise LLMUnavailable(f"unusable response from {model}: {str(payload)[:300]}") from e
+
+
+def _post(model: str, body_obj: dict, purpose: str) -> dict:
+    """POST with free-tier pacing, classified retries and usage accounting."""
+    _load_dotenv()
+    key = os.environ.get("GEMINI_API_KEY")
+    if not key:
+        raise LLMUnavailable("GEMINI_API_KEY is not set")
+    req = urllib.request.Request(API.format(model=model), data=json.dumps(body_obj).encode(), method="POST",
                                  headers={"Content-Type": "application/json", "x-goog-api-key": key})
     global _last_call
+    payload: dict = {}
     for attempt in range(1, MAX_ATTEMPTS + 1):
         wait = _last_call + MIN_INTERVAL_S - time.time()
         if wait > 0:
@@ -126,9 +158,4 @@ def generate_json(parts: list[dict], schema: dict, system: str, model: str | Non
         time.sleep(min(60, 2 ** attempt + random.random() * 2))  # backoff with jitter
     meta = payload.get("usageMetadata", {})
     USAGE.record(model, meta.get("promptTokenCount", 0), meta.get("candidatesTokenCount", 0), purpose)
-    try:
-        text = payload["candidates"][0]["content"]["parts"][0]["text"]
-        return json.loads(text)
-    except (KeyError, IndexError, json.JSONDecodeError) as e:
-        USAGE.failures += 1
-        raise LLMUnavailable(f"unusable response from {model}: {str(payload)[:300]}") from e
+    return payload

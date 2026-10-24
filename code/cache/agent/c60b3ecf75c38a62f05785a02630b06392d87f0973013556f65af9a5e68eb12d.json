@@ -1,0 +1,13 @@
+{
+ "resource_id": "tombstone_17",
+ "audit_at": "2026-09-15T12:00:00Z",
+ "turns": [
+  "search_evidence({\"query\": \"tombstone_17\"})",
+  "search_evidence({\"query\": \"identity_service\"})",
+  "search_evidence({\"query\": \"17\"})",
+  "search_evidence({\"query\": \"tombstone\"})",
+  "iteration cap reached"
+ ],
+ "prompt_version": "0814411a5455",
+ "submission": null
+}

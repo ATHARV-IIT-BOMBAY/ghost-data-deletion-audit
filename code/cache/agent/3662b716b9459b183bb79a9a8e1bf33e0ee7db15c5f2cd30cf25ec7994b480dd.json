@@ -1,0 +1,12 @@
+{
+ "resource_id": "audit_record_4126",
+ "audit_at": "2026-07-23T12:00:00Z",
+ "turns": [
+  "search_evidence({\"query\": \"audit_record_4126\"})",
+  "search_evidence({\"query\": \"4126\"})",
+  "search_evidence({\"query\": \"security_service\"})",
+  "submit_none({\"reason\": \"No evidence found for audit_record_4126 in any available files.\"})"
+ ],
+ "prompt_version": "0814411a5455",
+ "submission": null
+}

@@ -26,17 +26,17 @@ the 518 evaluation requests. Reproduce with the commands at the end.
 |---|---|---|---|---|---|---|---|---|
 | Baseline: trust `reported_status` | 32 | 0.531 | 0.000 | — | 0.000 | 0.000 | 0.000 | 0.000 |
 | Baseline: always INCOMPLETE | 32 | 0.688 | 0.000 | — | 0.000 | 0.000 | 0.000 | 0.000 |
-| **Final, all samples** | 32 | **1.000** | **0.531** | **0.994** | **0.902** | **0.946** | 0.531 | 0.867 |
-| Final, dev | 24 | 1.000 | 0.542 | 0.993 | 0.913 | 0.951 | 0.542 | 0.876 |
-| Final, holdout | 8 | 1.000 | 0.500 | 1.000 | 0.864 | 0.927 | 0.500 | 0.840 |
+| **Final, all samples** | 32 | **1.000** | **0.625** | **0.995** | **0.938** | **0.965** | 0.625 | 0.915 |
+| Final, dev | 24 | 1.000 | 0.625 | 0.993 | 0.946 | 0.969 | 0.625 | 0.926 |
+| Final, holdout | 8 | 1.000 | 0.625 | 1.000 | 0.909 | 0.952 | 0.625 | 0.880 |
 
-Step F1 without evidence_id is the same, 0.946. **Every cited evidence id that was matched is correct.**
+Step F1 without evidence_id is the same, 0.965. **Every cited evidence id that was matched is correct.**
 Contract violations: **0** on the samples and **0** on the 518-row `output.csv`, which also passes the file checks (518 unique rows, sorted, header exact).
 
 ### Field accuracy (position-aligned, all samples)
 | step_no | phase | system_id | resource_id | operation | state | evidence_id |
 |---|---|---|---|---|---|---|
-| 0.897 | 0.897 | 0.727 | 0.727 | 0.758 | 0.758 | 0.892 |
+| 0.933 | 0.933 | 0.820 | 0.820 | 0.835 | 0.835 | 0.928 |
 
 Position-aligned fields drop below the step F1 because one missing early step shifts every later step out of alignment.
 
@@ -52,7 +52,7 @@ Position-aligned fields drop below the step F1 because one missing early step sh
 | DELETE_RECORD | 1.00 | 1.00 | 1.00 | 21 |
 | REDACT_RECORD | 1.00 | 1.00 | 1.00 | 6 |
 | ANONYMIZE_RECORD | 1.00 | 1.00 | 1.00 | 5 |
-| VERIFY_RECORD_ABSENT | 1.00 | 0.78 | 0.88 | 50 |
+| VERIFY_RECORD_ABSENT | 1.00 | 0.92 | 0.96 | 50 |
 | VERIFY_RECORD_PRESENT | 1.00 | 0.92 | 0.96 | 24 |
 | VERIFY_RECORD_REDACTED | 0.91 | 1.00 | 0.95 | 10 |
 | VERIFY_RECORD_ANONYMIZED | 1.00 | 0.50 | 0.67 | 12 |
@@ -61,12 +61,12 @@ Position-aligned fields drop below the step F1 because one missing early step sh
 
 **Every finding and every remediation step is correct (F1 1.00 on all 9 operations).** All remaining errors are verification steps.
 
-## 3. Where the remaining misses come from (15 of 32 cases not exact)
+## 3. Where the remaining misses come from (12 of 32 cases not exact)
 
 | Cause | Cases | Lost steps | Why it is hard |
 |---|---|---|---|
-| Primary account linked only by its deletion-worker event, and **k cases share the same `reported_at` with k candidate events** | 18, 20, 21, 22, 23, 25, 28, 29, 31, 32 | VERIFY_RECORD_ABSENT ×11 | These accounts carry no identifier in any evidence. Timing narrows each to one of k equally-timed events. We assign by global elimination (`engine.assign_workflow_accounts`) and **leave true ties unassigned rather than guess** (a guess is right 1/k of the time and costs a false positive otherwise). |
-| Anonymized analytics record, same tie problem | 03, 04, 21, 25, 26, 27, 28 | VERIFY_RECORD_ANONYMIZED ×6 | Anonymized records hold no identifier by definition; only the "Policy action completed" event ties them to a case. |
+| Primary account linked only by its deletion-worker event, and **k cases share the same `reported_at` and a compatible result with k candidate events** | 04, 23, 28, 29 | VERIFY_RECORD_ABSENT ×4 (was ×11 before the status filter, D24) | These accounts carry no identifier in any evidence. Timing narrows each to equally-timed events, and the status filter (`engine.STATUS_RESULTS`) removes those whose result contradicts the case's claim. We assign by global elimination (`engine._assign`) and **leave true ties unassigned rather than guess** (a guess is right 1/k of the time and costs a false positive otherwise). |
+| Anonymized analytics record, same tie problem | 03, 21, 25, 26, 27, 28 | VERIFY_RECORD_ANONYMIZED ×6 | Anonymized records hold no identifier by definition; only the "Policy action completed" event ties them to a case. |
 | Retained audit record with no identifier visible by `audit_at` | 18, 20 | VERIFY_RECORD_PRESENT ×2 | Evidence never names the subject. |
 | Extra verification | 17 | 1 extra VERIFY_RECORD_REDACTED (tombstone_17) | Linked through a data-catalog event; gold does not include it. |
 
@@ -102,17 +102,22 @@ Each entry is in `code/DECISIONS.md` with its reasoning.
 | 10 | Storage key `object_19` reported next to the same attachment `support_001` | `object_` keys are not reported separately (gold case_07) | F1 0.943 → 0.946 |
 | 11 | English-only intent rules failed C4–C6 | Gemini intent classifier (multilingual, batched, cached). Explicit negation rules still win; the model may only flip to non-deletion at confidence ≥ 0.8 | custom 3/6 → 6/6 |
 | 12 | **Regression**: the first intent prompt called "please confirm my deletion is really done" non-deletion | Prompt defines follow-ups on an earlier or partial deletion as deletion | sample status 0.844 → 1.000 |
+| 13 | Account ties: several cases share a `reported_at`; analytics elimination assumed every case has an analytics record; a set iterated in arbitrary order | The case's claimed status must be compatible with its account event's result (37/37 sample events agree; only rules candidates out); analytics use event-side elimination only; sorted iteration (D24) | account links 312 → 429; F1 0.946 → 0.965, holdout 0.927 → 0.952, row exact 0.531 → 0.625; 0 status flips on 518 |
+| 14 | No model-chosen tool for uncertain cases (judges asked for this in a past edition); 128 linked records had no state evidence | Bounded tool-calling investigator (`agent.py`): search/read tools over time-bounded raw evidence, ≤ 4 turns, ≤ 40 per run, code-verified verbatim quotes (D26) | samples unchanged (6 targets, all correctly `submit_none`: their only evidence is after `audit_at`); full run 40 × `submit_none`, 0 rows changed |
 
 ## 6. Ablation: what the model layers add
 
 | Configuration | Sample status | Sample step F1 | Custom cases | Full run (518) |
 |---|---|---|---|---|
-| Deterministic only (`--no-models`) | 1.000 | 0.946 | 3/6 | 1 contract-invalid row |
-| + vision + intent models (final) | 1.000 | 0.946 | 6/6 | 0 invalid; vision changes 10 rows |
+| Deterministic only (`--no-models`) | 1.000 | 0.965 | 3/6 | 1 contract-invalid row |
+| + vision + intent models | 1.000 | 0.965 | 6/6 | 0 invalid; vision changes 10 rows |
+| + investigator agent (final) | 1.000 | 0.965 | 6/6 | 0 rows changed: 40 investigations, all `submit_none` |
 
 Honest reading: **no sample answer cites a screenshot, and every sample request is a deletion, so the labelled set cannot show a gain from either model layer.** Their value is measured where labels exist (custom cases 3/6 → 6/6), where they remove the only contract-invalid row, and in 10 full-run rows changed by screenshot evidence taken after the request. The deterministic engine carries the scored accuracy; the models handle the inputs code cannot read.
 
-**Stability:** the final full run was done cold (empty caches, 29 live calls). It produced byte-identical `output.csv` to the earlier cached run (0 of 518 rows differ).
+**Stability:** a cold run (empty caches, 29 live calls) produced byte-identical output to the cached run (0 of 518 rows differ). The final run (160 live investigator calls, everything else cached) changed no rows, and rerunning it makes 0 calls and is byte-identical.
+
+**Honest reading of the investigator:** it shows the parsers already capture every state visible by `audit_at`; it is kept because it is the bounded, verified place where a model may look further, and because it cannot change output without a code-verified quote.
 
 ## 7. Not tested / limits
 - n = 32 (holdout n = 8); one holdout case = 12.5 points.
