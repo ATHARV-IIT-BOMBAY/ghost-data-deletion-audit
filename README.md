@@ -96,6 +96,7 @@ python3 code/main.py --requests dataset/sample_deletion_requests.csv --out sampl
 python3 code/evaluation/main.py --pred sample_pred.csv -v       # --split dev | holdout
 python3 code/evaluation/main.py --baseline reported              # no-model baselines
 python3 code/evaluation/custom_cases.py                          # 6 custom cases
+python3 -m unittest discover -s code/tests -t code -v            # 25 unit tests, no API key, < 1 s
 ```
 
 ## Code map
@@ -114,6 +115,7 @@ python3 code/evaluation/custom_cases.py                          # 6 custom case
 | `code/ghostaudit/llm.py` | Gemini REST client: schema-constrained JSON, classified retries, rate pacing, usage accounting |
 | `code/evaluation/main.py` | scorer (written before the solver), baselines, dev/holdout |
 | `code/evaluation/custom_cases.py` | custom evaluation cases |
+| `code/tests/` | stdlib unit tests: schema/ordering, identity, intent gate, normalizers, engine time rule + tie-breaking, vision guards |
 | `code/POLICY.md`, `code/DECISIONS.md` | rulebook and decision log |
 
 ## Known limits
