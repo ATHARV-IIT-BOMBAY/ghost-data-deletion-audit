@@ -40,6 +40,16 @@ order the rules require: data flows are disabled and restores blocked before rec
   They can point to a resource; they never prove its state.
 - A full snapshot of a collection captured ≤ `audit_at` that lacks the resource proves absence
   (gold: `evidence_54` full profile dump, the empty `customer_profiles` collection in `evidence_51`).
+  JSON bundles and SQL inventory captures are per-subject extracts, so their absence proof applies
+  only to the subjects that file mentions (`engine.file_subjects`, D8). Retained records (audit logs)
+  are never proven missing this way, only by an explicit not-found (D11).
+- A **finding** needs evidence captured on/after `requested_at`: data seen before the request does
+  not show the deletion failed (`engine.audit`, D19; holds for all 41 gold findings). A violation
+  seen only earlier becomes a future verification check.
+- ABSENT also satisfies REDACTED, ANONYMIZED, DISABLED and BLOCKED: a record that is gone exposes
+  nothing (`policy.TREATMENTS`, D20).
+- Replica drift counts only when one snapshot shows the primary copy compliant and a replica still
+  exposing data (`engine.state_at`, `location()`, D9).
 
 ## 6. Resource → rule → required final state (CODE: policy table)
 | system_id / prefix | category | rule | required final state |
@@ -85,8 +95,13 @@ order the rules require: data flows are disabled and restores blocked before rec
 Deletion = the person asks to delete, erase or close their account or personal data, in any language.
 Not deletion: access/copy/export/portability, correction/update (name, phone, email), marketing
 opt-out or list removal "only", login help, invoice copies, and anything that says "do not delete"
-or "not asking for deletion". The model returns `{"authorizes_deletion": bool, "reason": str}` against
-a closed schema. Code checks it against explicit negations; on disagreement or failure → OPEN (S5).
+or "not asking for deletion". Follow-ups on an earlier or partial deletion (confirm it is really
+gone, remove leftover copies) **are** deletion. Order of authority (`intent.IntentClassifier`):
+1. explicit non-deletion wording in the text (`intent.NON_DELETION`) → NOT_APPLICABLE, always wins;
+2. otherwise the model (`gemini-3.5-flash-lite`, 25 texts per call, cached by text hash) returns
+   `{"authorizes_deletion": bool, "confidence": 0..1, "reason": str}` against a closed schema, and may
+   turn a request into NOT_APPLICABLE only with confidence ≥ 0.8 (`MODEL_MIN_CONFIDENCE`);
+3. no model answer (no key, no cache, failure) → deletion (switch S5).
 
 ## 10. Conflict table, resolved in advance
 | # | Conflict | Resolution |
@@ -98,20 +113,30 @@ a closed schema. Code checks it against explicit negations; on disagreement or f
 | C5 | Two observations at the same time disagree | the one showing data still present wins (conservative) |
 | C6 | Identifier is a near miss (`.jr`, different digits, same name) | no link |
 | C7 | Request text contains deletion words but asks for something else ("remove me from marketing lists only") | NOT_APPLICABLE |
-| C8 | A linked resource has no state evidence ≤ audit_at | **S4** (OPEN) |
+| C8 | A linked resource has no state evidence ≤ audit_at | **S4**: a future verification check, only in INCOMPLETE cases |
 | C9 | Support record: shared customer/agent/order context vs attachment owned only by the subject | REDACT vs DELETE per rule_05/rule_06; ownership must be evidenced |
-| C10 | Security audit record past its retention date | **S6** (OPEN): rule_12 only covers records within retention |
+| C10 | Security audit record past its retention date | **S6**: treated as RETAIN; retention dates are parsed into `Observation.note` but not yet compared |
 
-## 11. Named switches (each a constant in code; current default in bold)
-- **S1** resource_id sort: **string** | numeric. Samples can't tell (no adjacent same-op/system pairs).
-- **S2** evidence citation for COMPLETE: **latest qualifying file per resource** | one shared file per case.
-- **S3** replica drift: report the same `system_id`/`resource_id` as the primary (**default**) | the replica's own name.
-- **S4** linked resource with no state evidence: **omit** | report as remaining.
-- **S5** intent fallback when the model is unavailable or disagrees with code: **deletion unless an explicit non-deletion pattern matches**.
-- **S6** audit record past retention: **treat as RETAIN (verify present)** until evidence shows otherwise.
+## 11. Named switches (current choice in bold; where it lives in code)
+- **S1** resource_id sort: **string** | numeric (`schema.RESOURCE_SORT`). **Closed:** on the full
+  518-row output there are 0 adjacent same-op/same-system pairs where the two orders differ, so the
+  choice changes no row.
+- **S2** evidence citation for COMPLETE: **latest qualifying file per resource** | one shared file per
+  case (`engine.audit`). Gold case_04 cites two files, so per-resource matches gold.
+- **S3** replica drift: report the primary's `system_id`/`resource_id` (**default**, `system_for`) | the replica's own name.
+- **S4** linked resource with no state evidence by `audit_at`: **future verification check in
+  INCOMPLETE cases, omitted in COMPLETE cases** (`engine.audit` → `future_checks`, D10).
+- **S5** intent when the model is unavailable: **deletion unless explicit non-deletion wording matches** (`intent.rule_says`).
+- **S6** audit record past retention: **treat as RETAIN (verify present)**; retention dates are not compared yet.
+- **S7** workflow tie-breaking: **an account event must have a result compatible with the case's
+  `reported_status`** (`engine.STATUS_RESULTS`, D24; COMPLETE↔SUCCESS, NOT_STARTED↔FAILED,
+  PARTIALLY_COMPLETE↔PARTIAL|SUCCESS, 37/37 sample events). The claim only rules candidates out; it
+  never decides state. Analytics use event-side elimination only.
 
 ## 12. What models may and may not decide
-Models may: classify request intent (§9); read PDFs and screenshots into typed observations;
-propose links for ambiguous resources (investigator agent). Models may **not** emit steps,
-statuses, states or evidence IDs that code hasn't verified. Every model-proposed ID must exist in
-the parsed evidence, belong to the subject's identifier set, and be dated ≤ `audit_at`.
+Models may: classify request intent (§9, `intent.py`); transcribe screenshots into resource ids,
+identifiers and status text (`ingest/media.py`), from which code derives the state. PDFs, SQL, JSON,
+logs and text are parsed by code only. Models may **not** emit steps, statuses, states or evidence
+ids. Every model-returned resource id must match a known resource family and must not be a
+zero-padding variant of a known id (`media._padding_error`); unparseable identifiers are rejected and
+reported.
