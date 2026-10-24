@@ -46,10 +46,20 @@ def location(o: Observation) -> str:
 # Measured on the 32 samples: primary-profile deletions land -8..+4 ("operation completed" style)
 # or 45..75 min before reported_at; analytics "Policy action completed" anonymizations 28..29
 # (6 for the completed style). Events outside these windows belong to other cases or are retries.
+# Columns: family, event type, minutes before reported_at, one event per case?, filter by status?
+# Every deletion case has exactly one primary account, so "one candidate left → it is that case's"
+# is sound for accounts. Many cases have no anonymized analytics record, so analytics only use
+# the event-side rule (an event with exactly one possible case).
 WORKFLOW_EVENTS = (
-    ("account", "DELETE_RECORD", (-10.0, 80.0)),
-    ("analytics", "ANONYMIZE_RECORD", (0.0, 35.0)),
+    ("account", "DELETE_RECORD", (-10.0, 80.0), True, True),
+    ("analytics", "ANONYMIZE_RECORD", (0.0, 35.0), False, False),
 )
+
+# A deletion workflow's reported_status is the claim its own account-deletion step produced.
+# Measured on all 37 sample account events: COMPLETE↔SUCCESS 20/20, NOT_STARTED↔FAILED 12/12,
+# PARTIALLY_COMPLETE↔PARTIAL|SUCCESS 5/5. Used only to rule candidates out, never to decide state.
+STATUS_RESULTS = {"COMPLETE": {"SUCCESS"}, "NOT_STARTED": {"FAILED"},
+                  "PARTIALLY_COMPLETE": {"PARTIAL", "SUCCESS"}}
 
 
 def _minutes(event_time: str, reported_at: str) -> float:
@@ -134,7 +144,9 @@ class Engine:
         its reported_at, but several cases often share a reported_at, so timing alone is
         ambiguous. Events whose account is already identifier-linked go to that case; then any
         case with one remaining candidate (or event with one remaining case) is fixed, repeatedly.
-        Ties that never resolve stay unassigned rather than guessed.
+        Ties that never resolve stay unassigned rather than guessed. Account candidates must also
+        have a result compatible with the case's reported_status (STATUS_RESULTS); analytics skip
+        case-side elimination because not every case has an anonymized analytics record.
         """
         live: list[tuple[dict, Subject]] = []
         for r in requests:
@@ -144,44 +156,48 @@ class Engine:
         linked = {r["case_id"]: self.link(s, iso(r["requested_at"]), iso(r["audit_at"])) for r, s in live}
         self.workflow_links: dict[str, list[tuple[str, str]]] = defaultdict(list)
         stats = []
-        for family, event_type, window in WORKFLOW_EVENTS:
+        for family, event_type, window, one_per_case, by_status in WORKFLOW_EVENTS:
             events = [a for a in self.activity if a.source_system == "deletion_worker"
                       and a.event_type == event_type and a.resource_id.startswith(family + "_")]
-            assigned = self._assign(events, window, live, linked)
+            assigned = self._assign(events, window, live, linked, one_per_case, by_status)
             for cid, a in assigned.items():
                 self.workflow_links[cid].append((a.resource_id, a.activity_id))
             stats.append(f"{family}:{len(assigned)}")
         self.workflow_stats = (len(live), ", ".join(stats))
 
     @staticmethod
-    def _assign(events, window, live, linked) -> dict:
+    def _assign(events, window, live, linked, one_per_case: bool, by_status: bool) -> dict:
         lo, hi = window
         cases: dict[str, set[str]] = {}
         known: dict[str, str] = {}  # rid → case already proven by identifiers
         for r, _subject in live:
             rep = iso(r["reported_at"])
-            cases[r["case_id"]] = {a.activity_id for a in events if lo <= _minutes(a.event_time, rep) <= hi}
+            allowed = STATUS_RESULTS.get(r["reported_status"]) if by_status else None
+            cases[r["case_id"]] = {a.activity_id for a in events
+                                   if lo <= _minutes(a.event_time, rep) <= hi
+                                   and (allowed is None or a.reported_result in allowed)}
             for rid in linked[r["case_id"]]:
                 known[rid] = r["case_id"]
         by_id = {a.activity_id: a for a in events}
         assigned: dict[str, str] = {}
-        for aid, a in by_id.items():
+        for aid, a in sorted(by_id.items()):
             if a.resource_id in known and known[a.resource_id] in cases:
                 assigned[known[a.resource_id]] = aid
         changed = True
-        while changed:
+        while changed:  # sorted iteration: identical result in every process
             changed = False
             taken = set(assigned.values())
-            for cid, cands in cases.items():
-                if cid in assigned:
-                    continue
-                free = cands - taken
-                if len(free) == 1:
-                    assigned[cid] = free.pop()
-                    taken.add(assigned[cid])
-                    changed = True
+            if one_per_case:
+                for cid, cands in sorted(cases.items()):
+                    if cid in assigned:
+                        continue
+                    free = cands - taken
+                    if len(free) == 1:
+                        assigned[cid] = free.pop()
+                        taken.add(assigned[cid])
+                        changed = True
             open_cases = {cid: cands - taken for cid, cands in cases.items() if cid not in assigned}
-            for aid in {x for c in open_cases.values() for x in c}:
+            for aid in sorted({x for c in open_cases.values() for x in c}):
                 owners = [cid for cid, c in open_cases.items() if aid in c]
                 if len(owners) == 1:
                     assigned[owners[0]] = aid
