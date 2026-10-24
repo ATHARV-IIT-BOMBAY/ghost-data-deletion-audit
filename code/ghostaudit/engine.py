@@ -71,8 +71,9 @@ class CaseResult:
 
 
 class Engine:
-    def __init__(self, dataset: Path):
+    def __init__(self, dataset: Path, use_models: bool = True):
         self.dataset = dataset
+        self.intent = intent.IntentClassifier(use_models)
         self.identity = IdentityIndex(dataset)
         self.policy = Policy(dataset)
         self.activity = load_activity(dataset)
@@ -138,7 +139,7 @@ class Engine:
         live: list[tuple[dict, Subject]] = []
         for r in requests:
             subject = self.identity.resolve(r["email"])
-            if subject is not None and intent.authorizes_deletion(r["request_text"])[0]:
+            if subject is not None and self.intent.authorizes_deletion(r["request_text"])[0]:
                 live.append((r, subject))
         linked = {r["case_id"]: self.link(s, iso(r["requested_at"]), iso(r["audit_at"])) for r, s in live}
         self.workflow_links: dict[str, list[tuple[str, str]]] = defaultdict(list)
@@ -234,7 +235,7 @@ class Engine:
     def audit(self, req: dict) -> CaseResult:
         cid, audit_at = req["case_id"], iso(req["audit_at"])
         res = CaseResult(cid, "INCOMPLETE", [])
-        ok, why = intent.authorizes_deletion(req["request_text"])
+        ok, why = self.intent.authorizes_deletion(req["request_text"])
         res.trace.append(f"intent: {why}")
         if not ok:
             res.status = "NOT_APPLICABLE"

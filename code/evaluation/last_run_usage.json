@@ -2,14 +2,42 @@
  "requests": 518,
  "output": "output.csv",
  "models_enabled": true,
- "wall_seconds": 0.44,
+ "wall_seconds": 270.39,
  "ingest_problems": 0,
- "vision_rejections": 1,
+ "vision_rejections": 4,
  "provider": "google-gemini",
- "calls": 0,
- "cache_hits": 11,
+ "calls": 29,
+ "cache_hits": 0,
  "failures": 0,
- "input_tokens": 0,
- "output_tokens": 0,
- "per_model": {}
+ "input_tokens": 40878,
+ "output_tokens": 21867,
+ "per_model": {
+  "gemini-3.5-flash-lite": {
+   "calls": 27,
+   "input_tokens": 37834,
+   "output_tokens": 21722
+  },
+  "gemini-3.5-flash": {
+   "calls": 2,
+   "input_tokens": 3044,
+   "output_tokens": 145
+  }
+ },
+ "per_purpose": {
+  "vision": {
+   "calls": 11,
+   "input_tokens": 16614,
+   "output_tokens": 1889
+  },
+  "vision_escalation": {
+   "calls": 2,
+   "input_tokens": 3044,
+   "output_tokens": 145
+  },
+  "intent": {
+   "calls": 16,
+   "input_tokens": 21220,
+   "output_tokens": 19833
+  }
+ }
 }

@@ -11,14 +11,14 @@
      "user_20",
      "darwish.omar@icloud.com"
     ],
-    "status_text": "Last 90 days",
-    "category_hint": "Users"
+    "status_text": "",
+    "category_hint": ""
    }
   ],
   "page_subjects": [
    {
     "reference": "user_20",
-    "status_text": ""
+    "status_text": "Last 90 days"
    }
   ]
  }

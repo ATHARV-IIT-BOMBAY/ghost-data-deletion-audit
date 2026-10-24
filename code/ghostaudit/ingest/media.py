@@ -92,12 +92,12 @@ def _transcribe(path: Path) -> dict:
     parts = [{"inline_data": {"mime_type": "image/png", "data": base64.b64encode(data).decode()}},
              {"text": "Transcribe this screenshot."}]
     model = llm.model_name()
-    answer = llm.generate_json(parts, SCHEMA, SYSTEM_PROMPT)
+    answer = llm.generate_json(parts, SCHEMA, SYSTEM_PROMPT, purpose="vision")
     # Escalation: the page names a person but the cheap model found no record ids. Measured on
     # marketing_profile_console.png, where the id sits in a subtitle the lite model skips.
     if not answer.get("records") and answer.get("page_subjects"):
         model = llm.ESCALATION_MODEL
-        answer = llm.generate_json(parts, SCHEMA, SYSTEM_PROMPT, model=model)
+        answer = llm.generate_json(parts, SCHEMA, SYSTEM_PROMPT, model=model, purpose="vision_escalation")
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     cached.write_text(json.dumps({"file": path.name, "model": model,
                                   "prompt_version": PROMPT_VERSION, "answer": answer}, indent=1),

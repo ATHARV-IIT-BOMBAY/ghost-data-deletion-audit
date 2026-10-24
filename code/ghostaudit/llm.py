@@ -38,8 +38,9 @@ class Usage:
     input_tokens: int = 0
     output_tokens: int = 0
     per_model: dict[str, dict[str, int]] = field(default_factory=dict)
+    per_purpose: dict[str, dict[str, int]] = field(default_factory=dict)
 
-    def record(self, model: str, inp: int, out: int) -> None:
+    def record(self, model: str, inp: int, out: int, purpose: str = "other") -> None:
         self.calls += 1
         self.input_tokens += inp
         self.output_tokens += out
@@ -47,11 +48,15 @@ class Usage:
         m["calls"] += 1
         m["input_tokens"] += inp
         m["output_tokens"] += out
+        p = self.per_purpose.setdefault(purpose, {"calls": 0, "input_tokens": 0, "output_tokens": 0})
+        p["calls"] += 1
+        p["input_tokens"] += inp
+        p["output_tokens"] += out
 
     def as_dict(self) -> dict:
         return {"provider": PROVIDER, "calls": self.calls, "cache_hits": self.cache_hits,
                 "failures": self.failures, "input_tokens": self.input_tokens,
-                "output_tokens": self.output_tokens, "per_model": self.per_model}
+                "output_tokens": self.output_tokens, "per_model": self.per_model, "per_purpose": self.per_purpose}
 
 
 USAGE = Usage()
@@ -79,7 +84,8 @@ def available() -> bool:
 ESCALATION_MODEL = "gemini-3.5-flash"  # stronger model, used only when the lite answer is empty
 
 
-def generate_json(parts: list[dict], schema: dict, system: str, model: str | None = None) -> dict:
+def generate_json(parts: list[dict], schema: dict, system: str, model: str | None = None,
+                  purpose: str = "other") -> dict:
     """One structured call: returns the parsed JSON object the model produced.
 
     `parts` are Gemini content parts (text / inline_data). `schema` constrains the output
@@ -119,7 +125,7 @@ def generate_json(parts: list[dict], schema: dict, system: str, model: str | Non
                 raise LLMUnavailable(f"network error: {e}") from e
         time.sleep(min(60, 2 ** attempt + random.random() * 2))  # backoff with jitter
     meta = payload.get("usageMetadata", {})
-    USAGE.record(model, meta.get("promptTokenCount", 0), meta.get("candidatesTokenCount", 0))
+    USAGE.record(model, meta.get("promptTokenCount", 0), meta.get("candidatesTokenCount", 0), purpose)
     try:
         text = payload["candidates"][0]["content"]["parts"][0]["text"]
         return json.loads(text)

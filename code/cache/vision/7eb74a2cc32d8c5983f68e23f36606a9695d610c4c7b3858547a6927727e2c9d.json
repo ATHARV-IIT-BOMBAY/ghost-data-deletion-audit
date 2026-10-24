@@ -11,7 +11,7 @@
      "user_11",
      "haruka.s1838@zoho.com",
      "+81 90 7610 2507",
-     "support_9538"
+     "user_11 \u00b7 account_5762"
     ],
     "status_text": "Silver",
     "category_hint": ""
@@ -19,9 +19,7 @@
    {
     "resource_id": "support_9538",
     "identifiers": [
-     "haruka.s1838@zoho.com",
-     "+81 90 7610 2507",
-     "user_11"
+     "support_9538"
     ],
     "status_text": "",
     "category_hint": "Support"

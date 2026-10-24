@@ -27,7 +27,7 @@ USAGE_FILE = ROOT / "code" / "evaluation" / "last_run_usage.json"
 def run(requests: Path, out: Path, trace_path: Path | None, use_models: bool) -> None:
     media.ENABLED = use_models
     started = time.time()
-    engine = Engine(ROOT / "dataset")
+    engine = Engine(ROOT / "dataset", use_models)
     for p in engine.ingest_problems:
         print(f"INGEST PROBLEM: {p}", file=sys.stderr)
     for r in media.REJECTED:
@@ -40,6 +40,7 @@ def run(requests: Path, out: Path, trace_path: Path | None, use_models: bool) ->
     for name in ("deletion_requests.csv", "sample_deletion_requests.csv"):
         with open(ROOT / "dataset" / name, newline="", encoding="utf-8") as f:
             every.update({r["case_id"]: r for r in csv.DictReader(f)})
+    engine.intent.prepare([r["request_text"] for r in every.values()])
     engine.assign_workflow_accounts(list(every.values()))
     print(f"workflow links over {engine.workflow_stats[0]} deletion cases: {engine.workflow_stats[1]}")
 

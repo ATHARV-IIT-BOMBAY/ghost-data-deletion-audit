@@ -3,7 +3,7 @@
  "model": "gemini-3.5-flash-lite",
  "prompt_version": "cf20ae79deb6",
  "answer": {
-  "page_title": "Customer-platform archives",
+  "page_title": "Vault Recovery Manager",
   "records": [
    {
     "resource_id": "backup_9291",
@@ -11,7 +11,7 @@
      "bluepeakco@outlook.com"
     ],
     "status_text": "Archive",
-    "category_hint": "Archives"
+    "category_hint": "Archive"
    },
    {
     "resource_id": "backup_9288",
@@ -19,7 +19,7 @@
      "miller.logistics@company.com"
     ],
     "status_text": "Archive",
-    "category_hint": "Archives"
+    "category_hint": "Archive"
    },
    {
     "resource_id": "backup_9287",
@@ -27,7 +27,7 @@
      "areed1433@gmail.com"
     ],
     "status_text": "Archive",
-    "category_hint": "Archives"
+    "category_hint": "Archive"
    },
    {
     "resource_id": "backup_9286",
@@ -35,7 +35,7 @@
      "summit-retail@company.com"
     ],
     "status_text": "Archive",
-    "category_hint": "Archives"
+    "category_hint": "Archive"
    }
   ],
   "page_subjects": []

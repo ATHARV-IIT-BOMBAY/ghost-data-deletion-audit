@@ -1,0 +1,2012 @@
+{
+ "021f1d574999966487a4350a51f38b383b7b0a0de596dc9aaa635d9ea684220c": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "044d349a40fa752240fa18e41cae3ad4816dccfba83cfb452c72f22487abb80f": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "want to close this account and have its associated personal data deleted"
+ },
+ "05d67d2f3c518b6aded6055be204041a4947457a031ce431a4c2d2eb2fc4beb4": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "05e669cfd689fedd9c30fed6846af4115564b2f012661ecccd52d41659dd27cf": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Close the account completely."
+ },
+ "05ebdfd04660fe53072da5bb629b41a53dfc1bf18153abdfa3c5f115e10d7c2e": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "05f3183caf41a7f8e024cea5c8025e49e02fd5a9a3653cbd82cccc3b2988e00d": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "to be erased"
+ },
+ "06665be8d56b5a4842e84bd013223b9c36a9a50d914e2e1c7ed9eafb18966038": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I want to close this account and have its associated personal data deleted."
+ },
+ "0669d68f0dbc08f039f46c83f40a7a2a4e9e790319c523ad8435509e553e7f87": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I would like the account associated with this address to be erased."
+ },
+ "07d30199de484fa646d655e1f1f9dd886a407d9d5f2ff8cba2a1489008ebb83d": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "account was fully removed"
+ },
+ "07f2c617acd59cee87f5e4e8ae944e50190b97a1ddcc085eb8fddd2b5debbda4": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "07f5d9c491b588a2ef9e21e2f90565d13626e651ceb1fbc7442bdb2e7c996ccf": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "081fc37862db058b4a66eb3f726b158ace8f3684bb0526396aa5db8f88438cb1": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "08530154b301bf5055f69ed96484994e852d1c0d59b73ec9af60406f51c06146": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "089d6f2ba5cf97cc789832f687f39e775afe32908687e000933a21c508482e20": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "remove my account and the personal information"
+ },
+ "08dc0e114de0ed980e1f38818dbdb729cedea94e1cbcf9ce9ffcfa7034846df8": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "08dd9beabd3e69036b2f501c252ce5b1eb4a78b3ca8bee243ecc35c4637de644": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "to be erased"
+ },
+ "0a350c43447e827acbd4917e36d2078f09f0f513806d8e540c207c0e7cdc5bf2": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "0a5ea4f7f9e5ca343f24c3425ba17ffe54b9f4408be70d6b043b032dfab59eba": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "0ae9ebd958af4adc93e9f92ed3b63914e2b274cac8681367c0e7da90668b6987": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please treat this message as a request for permanent account deletion."
+ },
+ "0afe11d45e013e857c164876dc002d50f1e8a80f576507a8c6eca3a9d613325f": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I want to close this account and have its associated personal data deleted."
+ },
+ "0e5c86cbc21de4f61997bff3f52cf262d645d1dd64eeeb257cc7c36c37962cb7": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "want to close this account and have its associated personal data deleted"
+ },
+ "0e774bba83988f51c4f726fc0fceef20e8f2a1c4d3237ac78b7eed84967e223e": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "0f21293a068d4749f7994a760d1bfd62aa17a320f58d0b05d0b8d060289cc25d": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I want to close this account and have its associated personal data deleted."
+ },
+ "0f42b7898f90f576a4cace5563ffb211cf9a275b8dcc0ff7b1d8af14bca782f3": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "0f71cdc2a09b6f1f4fa8156727b0d922386dc8decebc11aa57fca69a72c7c4f0": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "requesting deletion of the account"
+ },
+ "105eaf1d8b4a9bd7cf8266c01265ae2564ca3866ec0926d9ab46d635f638460f": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "10890fbb2b4241eb2cdb0b63814481c81d317e198c3f2f97c19af7286fd023ac": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "10af13bac606a134288f5e0d02b6e55c2289047333d71fa7986dfe27c4f0a3dc": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "1101078284807e9a11fec923d4ad1de023466f04d588f2dd89389e8d1c51e000": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account linked to this email address"
+ },
+ "112ed5c323f9975f7be2ffe279c2c3f854d77e2814a681284213eafc587a2c33": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "1142dc4717893f1e0a553c7f87afcdec6e319f907e41650fde00e84892073c56": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "deletion process for the account"
+ },
+ "13120443870a9aabe21af2cf95e3529160f757616c9d240a13327d15403cc63b": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "delete this account and its personal data"
+ },
+ "1418d4451b6ddbb95bb90f9bba31ee6e3e8ddc3e73ade1ab29ec3a177f549872": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "145cda3e831aee6089ad3537b7b37e2bc322cc60b41d8b7aa984fbb424f25b8b": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I want to close this account and have its associated personal data deleted."
+ },
+ "1529d879fc5e42d6c0a85e6ce25c069e35c2ba260af004856af21e935575d27b": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I want to close this account and have its associated personal data deleted."
+ },
+ "15734c0b4cf2fd92939ef28a8e6199b4aa911a40912130539f732366f9917ea1": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "remove my account and the personal information"
+ },
+ "1633f4a8941dc8861ae4c41cce088737de1003eecc3596a8b1166b02c8fe12b4": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "16b48b95f0cf817a8c0c50b11ae2b81f579ed214a389b82ccf0a4ccb9b8beb3b": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "16e5481e0b3d8c6f7ad50fbf2e9ae89408418200a7e17e83fb3ae3bf90801ac4": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please treat this message as a request for permanent account deletion."
+ },
+ "18719c04898afaeb18ccd0ae6725c64ad09cceac59d6f5275448849bb722d080": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "187fedee09c32de0cbf8a93c8a513011e020034cb301b3656f8062533b6eab19": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "1914e34043ab94bfdd8292cbab8d3197082af8c621871a80e25e71d5345d8819": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "19e8e01c8700eea2b5a173350823b08166be5e2a11bc61e6a246579c2bdde0c0": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "1a9348685ff36eeb8d8aeaf900a135b0fc973f552635724996643aa547ba5a21": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "1adfd69238afbe95ce3360d392cac890a482aa3413ca52debb66939aa005a53b": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Can you verify that my account was deleted?"
+ },
+ "1bd3fce59d714c4d49d638f5e2ff6917fb07323713f49565f7ecf714a9cf9533": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please begin the deletion process for the account"
+ },
+ "1bdc3aa4d9734899d38abc45ea83bc7667bfae18e9f9ba0b6b9c3282e105eb8a": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "remove my account and the personal information"
+ },
+ "1d73d09eb8c00163eb26e328c9264ff9a8b8d57e44158a765379bbec7bf04e44": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "confirm that the profile is gone"
+ },
+ "1e10e30d0eaee7c016acaa9ca9701a87d6ca80393e3cf9ca98f4f296ef2d8249": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "1e83cdaf6305b2fb86bc8253b2535764d217bcfab1f893ab3c101631d093626f": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "1fbbdccf813d52bf784e12fb5ee2f89a6d7ac7f788271dad2b6b673e0f3c5a20": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "remove my account and the personal information"
+ },
+ "207af6255ea4d35971a31b80a7518604091c0cb5a26d6980a681429bc24ee6ca": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "to be erased"
+ },
+ "2091141092c887b5c601ec91462e2e13f3f911120f7f66ccae78e419b3900493": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "21b7df59007a0ac97874f4b10cef7fe6c3d9b587fb53b556afd244ac5d022f2e": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "2376ef23f7e2a4308caf30877388f9e6e6a1fdf9a9e8fa5b05e55cb6b5cd8b5b": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "245445834bd989da4f6131de5df9f3971b70635aaa02be7fa0cbb931f0cd877f": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "263670b032aeeffc53276c52e90ecf89e100c1a876ebc1e5d22fb898c809e279": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "requesting deletion of the account"
+ },
+ "2670e767e64f02f3d4b8f78db5d26412b373a1dbf5414f943c30cb678549fbb7": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please treat this message as a request for permanent account deletion."
+ },
+ "2770123ac018b7e2ff086eda4233a760fbf79974db84ecf14555c58bed64b87b": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "delete this account and its personal data"
+ },
+ "28b8591d53a52dbfac2cd72d47d188f0611efef5029d039107c48681e8e29f39": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "295bad9755d779e89d8d15e302ff7dfb02f81a81e7a23031fde00e3aa633772f": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account linked to this email address"
+ },
+ "29df2f6cb579a46829bac5d1f23b23486d22f4a481ea57c02c368cc75390ebfb": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "2a936ac0b4ec3867a82ecc6b63c5fb34baf548168c8255c86ff93774fa685be7": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "want to close this account and have its associated personal data deleted"
+ },
+ "2b0be155da3b344006caa3a553b7ca4df938cab3e144698211ae2dee9faa51cc": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "2b84cb80c436a094d880874684da0cfc948e0341a107f77bf33213484d090063": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "2b8e5aecee78d9e43965e32a9abe462d9630a0e9b5ae92dc3670408df456cf87": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "2bbbe8bbb0129d8efa7397d9a8ea4d73930c4191e15a8e09e6a9eda84940faae": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "account-deletion request"
+ },
+ "2c747beb710c6933669f61d5b805ef61480d090ca874c74d9a85429be89ce62c": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "2d20ddb81aba9548487f75ee2097601195f9ed5509e19a73cb0de24fcedc4541": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please treat this message as a request for permanent account deletion."
+ },
+ "2d326ffe36933d3b0bd254bd833d4243b85852fc6631e64f86a71730cdad05ae": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "deletion process for the account"
+ },
+ "2d6c6a74a7739f22cf352eaf1096f5bd45f05514dd25bb42b4a4fa8400b33638": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "requesting deletion of the account"
+ },
+ "2dd3a925ad7ea0f1ff9bf73bb498cb90769d697c303ae914709b01159df917d2": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "2e3d7f74f5b441b759cbde5957b64b83274502a4a1c83b19e9b71b8f8e14802a": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account linked to this email address"
+ },
+ "2e80a3e200a441c638d44ce67dbbc670a72b446d79d88b50b929f76ad40b7c0a": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "2f364adfa3f17944fe48b2bca4280154e8293ae6b7dc536377e5e36684b7c7f1": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "2f4889a17a3e61217a9b90c385b05a781f6093b65a074f67bc8bfde0a694286c": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "2fdaf85e38d5741f2797eb8cb4c414f322bf74d07735f84fb1b71177ba5951ab": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "2fe529e527fbbc226be6b4b1bdd7065d960938bea65bc17b62ba500c6d59f834": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "30bfa57a554078a555185716e8a7e04c1582f3da0c3650ccb76a6944b3d543e8": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "31b5f7258acd51018e4f79146e498e5a0801ecbb74c5041206af1612eb5868b1": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "32207611da5ed78b4c18aa0c6ccaf418e31979daf1d45af66de8404938c15695": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Solicito la eliminaci\u00f3n permanente de la cuenta"
+ },
+ "32ca69cab84ecda7fae90dbd6365b36cb4bf2aaed3caf2015b7ba112bc05a942": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "completar la eliminaci\u00f3n"
+ },
+ "348293f79a056ffe1029f582c55707586e5d0262bee7a7a34be3e9951ab426f1": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please begin the deletion process for the account"
+ },
+ "35e9d2b9b615ff8d05cb87a6a6d2afb4c1c7cca88509311fd9a5635157235367": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please treat this message as a request for permanent account deletion."
+ },
+ "367c9033b335327ec147df56a8890b3c5e49d7dd97104c965404474ae181da74": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "deletion process for the account"
+ },
+ "36a90c458dce19e7c75acc6d5e6d327e1baa5954d4e8d1e12e33a4bba800f459": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "remove my account and the personal information"
+ },
+ "36da6dbc68bc10c139b60c19b78e662aadf6c8adb9a4380028a05451e58e2b5b": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "375fc44307e30d51725aadc8928393cde45d6ac0f93617b53ba7e4aabf8228d7": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "37fd5ec897eb0ba61d7fddca71a033d088b837fb6d0cc88a2cc609c182fc0ce2": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "deletion process for the account"
+ },
+ "3822484ae6a7eb7aff0e3755e0d06d3a437dcc0709a96f4685861153b0818570": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "38ef272987ca9dd2dead8e8ccba4c897efa30320fa696ff0c5209a469d0fc41e": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account linked to this email address"
+ },
+ "39cce5db8994d36b329058701c87447d4fff5979e5696e679a34612e8bef06c0": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "3b0fc73b6f403a04d0433262f859fcf65af8feeaf07b474a444e4e6f860f3199": {
+  "authorizes_deletion": false,
+  "confidence": 1.0,
+  "reason": "leave the account active"
+ },
+ "3cca05ade3c8deaa77a2e780458bbf325f7d46c2c013c65d2827d6c2773dc628": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "3e9dd92961210f70cee6ba68919a583309f87d47bf9c5378f5f5a46bf5b626de": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I would like the account associated with this address to be erased."
+ },
+ "3ee79a0ffa4c325bfc1509bfd859a1b0e02800b0079c46846303a66618aecdb2": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "3f2074ad1e8bde82d8f776db7fcc9320979f87e4f571605960a792f6a3ccd181": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "requesting deletion of the account"
+ },
+ "3f3909983c1b597d8621391b329d6411071e5aca2fb7b5b88f12f194d1f97f73": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "3f424a972288dc1e4162528f4065ede2f3cb852d4e5123ddb7570a2ec4190e4f": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "401ff4b6be36a151ba7ed31844755cfb9bbd76c991c16df92b9fbe65e422eba7": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "4041594340295ef7cd5311df7c0ddbf15e0055fe6391bb81600ad0e0b621484c": {
+  "authorizes_deletion": false,
+  "confidence": 1.0,
+  "reason": "I still need the account and my order history, so I am not asking for deletion"
+ },
+ "40715f4130b7a0ec9c52bfae92b7e3929810539feb0bbde0b2ea3b1adf848afb": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "417499b7347cca8e0450c51a54a3cb3fdc5dde42e079f68524da27552833b56d": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "41b6f8eb77fc25c184942d184ab746e2170f417ad0001b8354352edb2fafe840": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "4387d8683886f7d28eba735a5600afb6e0b5d7f243267ec0d39ffe2cb4d7d8e8": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Close the account completely"
+ },
+ "440b9e4d5eb89cd495087dac710086589fecc765550f2078b2094cc037509b7c": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "4512e7084985c11bd18f695bcb05f9d6de5f818dc574835b10e039bbfb7e2cf3": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "45351d0de982477990283ff21a966734f6253c1c9a005f5ef5aa9a5fd0c8b93c": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "delete this account and its personal data"
+ },
+ "45aada75e38305af0e90295b01d07de9165448fe23296ec48f7452aa532b4b59": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "48de2c830dd6d3ae21daf36868cd7e4f0c149f5db164bb11510eb86917b1d80d": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please delete that export file as well."
+ },
+ "49370e7ff96b50ea12c42278e81c36e8fda2ecb9a2f9f50b15edc70e012af8f8": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "remove the rest of personal details in internal deleted-account record"
+ },
+ "49f4bb6139a05a0b5592f899a14822c28cdbd678ae15d8a9ce07ba4da4cce456": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "suppression d\u00e9finitive du compte"
+ },
+ "4b00b300c3854ff2a835ef7d94cbdfd3f334b38287c0da7614b2fa9a130d66dd": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "4b461cc70ecae172d69cab09137db2d27a29f0b3a86df107e4d39b8c6c61b395": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "delete this account and its personal data"
+ },
+ "4c0d3106c8e5d30e74437d9947a8d0b02df82373b7bc63577e85414e3dc5e3b9": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "remove my account and the personal information"
+ },
+ "4d4160651fc648f30230aea6ce789bc489f1c38b7915020f3a5f3d86e40ae0ad": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I would like the account associated with this address to be erased."
+ },
+ "4d556bd62bbfd5e021406d102e6561e07ca2c47da0eb7c952802c588b0276451": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I want to close this account and have its associated personal data deleted."
+ },
+ "4d6e712268966361baca83b1b38397041bca0e3d8eab888ba108bda5898db7da": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "4e613a9e05f38a65f809558c6a21dbd6428410ea894dada099e943eb6f5b4f27": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "want to close this account and have its associated personal data deleted"
+ },
+ "4e7ade01ba7d190db2aa8f6773d905d0d5b80f0e47d45c3911014e41ae13d558": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please delete my account"
+ },
+ "4f709292d6c206dd696c4b16778d2a74ceb74c47f1f7a236c621f3cb6ee7b2d6": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "4fe2fb817d496b74b94831e6963de98f5546e04c915f2e7dcb2e240b9203a2cc": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "51183ed3ebc01bb53500fa4ebac6df0f9e38d1b8b8e9df72caedbf34905f02e5": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please remove records under both addresses"
+ },
+ "51e3ac3d8f2def6d6e5299c91a11c14e03d104f5d82d50375befb56a3d6ad874": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "5345d9248b7ed88af22fc69bb90af35991c35f95a4988d11378d159bde6ac136": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "554e73b042a4248aa442ffc3f96e2f53155482a550d1d1139070735a53f30419": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "57bc00413846fbe193f662a11fdc8a42be1f044ba26889732a3ec22ffcb46e68": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "to be erased"
+ },
+ "57bd6700966480ac845d17e05c7c404f49570ea28246d3c2eb8d92227660cc21": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "588434676d35781569ce0fb63f30d66f71315d9502bb2531f1471353945ca73e": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "58cb6c9219d387be31587ea71ab677c2c3337b6c583b567233aec137a6d04c69": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "58dcd35d93a9e69e9df099db467efe3e759c33dc6aad442c0e39e2d6a3eb2287": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "want to close this account and have its associated personal data deleted"
+ },
+ "599352b1ce76f22d5fc9d76917277c1d957a426fd72c2b16e24b7ace0909fdff": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "59df0fd4c962ad25414dd5cdd09f62c41d76628f04ae0187e23ca336ed01ad84": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "5a78e1ce184e3a06edeb3ea88f01216bb80849f728949edc71e54e8fc16eaf55": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "5ac63862707d5a835453dc5f790d0115d077d01e4358665f38fd390f6e0afaaf": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "5b555244c980bcbde14addf73312b45eb7c8e3b53534edfdee0929e3ab378b91": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "5b61ba86fa8e146a263526533d47d89a6dbf2b132362fbe76cce114cce9fbd9d": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "5b89849713ce2258998389fcf1b3ada131301ef661d35966edd1266213001ef5": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "5bd36d1bd616fcacf54d9444304cb04175adfc6ae27ff9e1989e52bc2d74a1d3": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "5c43c32fa975260742d4fd83e241fa02a6796eb84b67b26edbfcf830d6efd1af": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "5caab495772e6528d00a55cbcadeae7e4e3f87727f9f6bd88756ad3e3fdc253d": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please begin the deletion process for the account"
+ },
+ "5cb98ed9cb5142a6e510d9bff8e9a8a9571fd759e2699d5e1c2466aa76563bff": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "5d9ab97ae66d24e75c3e5999bb2e68f18922b9aacefd7790be91b3b37a7b91c4": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "5e72845366b980264dd5fb9ecb60a2a9219a8afbe12f00c6285bf07ecff2a838": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "5f3472bf4f5e3f27535b3a12c89dbbc196279a85cf6074160df11d5d94d70c07": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "5f940fab77d4f1b63a91579696c76b76e3e379fcfed921b66df68687ca055822": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "606af399c9a8258e9977d17cafd8a885ec4a30afd5ef149a976af54cb95425e1": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "608a89ed48dd8aa8d7a4f510719e737d2da86e57f9d56c0a3e2efc1a3c921286": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "60a9f3c7c824a0eee6d1838113c8b0a26bff2b841a1eeb1796d8c1b5967e078c": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "requesting deletion of the account"
+ },
+ "613e427c198a33c356dfe06c71aae27da6b872fa55ebeaed21741e2d06cc3225": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "61dabd52789e6acd5dbf794228751bc0c6f570056fe6d7d0b51d8f8ac0510c1c": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "622ffb7ea63df3802d54d724c5808486f4d33553bfd16d98fd5d919fc9dfb50a": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "62349dbd1b41645c2617901d91a39f2d21fbfd4c00a6f89580c02aa1c0c9c35c": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "638bbafe1ed06d9634b98c09a34332fb7ee9555b6049075e23ee9eec33d16208": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I want to close this account permanently."
+ },
+ "64455e1c6bb5c265be00e06d6a6eb14404596fbbb457b96cbabea8b220b22979": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "want to close this account and have its associated personal data deleted"
+ },
+ "647d0287dea0622f07f1a111ae7ab8dac4877b87438ddff6da56a6f854dd19de": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "64c9fc073715b9dc34df7ce548b6c08b57972d88f420cc84d1ae17ce9b56d4a2": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "652e7fec542bdff9bc33fb7be6d835a0c2a12c4bb1c1727e7110d9dcbf338092": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "684c47cdccc5e01178f0fa97649081270812e2bd2e0f15ed77c1e6278a004f53": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "69aa6ac133794ad17c5eab6ac8597c5243bb1cd4f87ac23fdc0d65e127f43008": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please treat this message as a request for permanent account deletion."
+ },
+ "6a70542bfcd83dc3a73815ba1b15e58df69254523337c22d1e6ea63b6b75d8ff": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I would like the account associated with this address to be erased."
+ },
+ "6a789cbffc6df2bd747216e31a17c857f2bd1288fead965bb8fa48dc38647260": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "6a991cd0a75dfa48a8a6c0495be850f2e5a41ce70cac2cd5bfcf9eba39f3fce2": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "6d0b0dde8f0cb3ee68167aa93fcd64ea17a5b4094d9c73132e0779724f84a386": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "6d594582e64e3cd50bfa92b558a78c7f0a44daceb09a6a4f51376e2d8827e2a2": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "want to close this account and have its associated personal data deleted"
+ },
+ "6f0bb2dd1af3fc2e1559996fb0fc480b0d8f1d122ab086131991ebe8986c1fa1": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "delete this account and its personal data"
+ },
+ "6f70afe5cd53384e237c4d4c0487124b2227ff1a506c71df460825db39fc3c66": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "70a325613aec2b62f945127508d5a506b0287d22ef5029874dfa4e50d8076a88": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "delete this account and its personal data"
+ },
+ "715d853ee7047739c244447b90bddf7c9e2cea29ac67bd78b57647b2db28f9dc": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "deletion process for the account"
+ },
+ "717321fb59678d3027b809a35b3955fb46f61933a305994ad4e34e976fdfab5c": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I would like the account associated with this address to be erased."
+ },
+ "717d9ad378117993b9a965503dfc23170c9fa6188ea8b405e0bcd7a4c351974c": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "717e0a21799a07fdb6bf32292ef0878bff6909aa06e53105f93250f97d15e9fe": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "7193318352450b084df59504a2a92952c4f19fb460cbaa5c8ad733eb968a520c": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "want to close this account and have its associated personal data deleted"
+ },
+ "71aac070e2d435cc4bd28dfb4ca9cc66bcf0b2b18487dba984addc3d877fee62": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "7248945f768a2e4a81a45ff48423279d41531311fd8e948e331bb80f594bb01a": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "733edff17e260ff612dec144d662cf25d04db3cce217b4774fcb26b96d11e681": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "73d04d12d0a9f05de15abdde9790631c3fe44effe6a61a6c9b32c43ba504ff78": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "to be erased"
+ },
+ "7418c9f5d31f3955311421fd521b932218ae2b54b5fd741d431a2987ccf524b0": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "743bfc797d58c68a3b700aa6261b1620b0a9d81f7bb9f86c368a49f93e7d2c87": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "743f5535b9b2cfe23217f08617a3807007fc9c74a91fd2be373343af21cafe58": {
+  "authorizes_deletion": false,
+  "confidence": 1.0,
+  "reason": "Do not close the account."
+ },
+ "7583d94e3d12088564a30e5931e4cd4a62714f20065e555ea55cf2591a312ef8": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "75cc076042e137cd9234872896bb74bb55530e9e3420d34a73d792b1d9ba31ae": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please remove my profile and clean my personal details"
+ },
+ "763498d839fcea662109928fb71e0858fc3734d26d8ac4295ec3da0f48a484c9": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "78d2dad57a481114845b6d43c55ef4e34a556c270817a36d60b04234a1625996": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "799a3de0b6f5f77119ab334a978223b60033ad3f2df3a78ac538f28c1bd0f257": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "79b8944c2dbd8cd21f6b47c91019726f5d1eb58ec58ca819c99c495864181997": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "79cbc62312a2d8d775c2383bafe00a664e0f08b78e320d1e6e8b01c3cf2e97dc": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I was told the account had been deleted, but I can still find traces... Please handle them"
+ },
+ "7bb477e8c2e611ccc7872e150bd21396d4d0afb80ee04e7aa1b2dfe0692756c7": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "7bbb9bb3677ed22353c76f3f395084934b69408497ec19c534757f91086daaf5": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "7bd04133677ffcf88338d602f115a354e3327d4f9f101c7a4fd3418bba31db4d": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "7c7066dba471d2edadb5f368bd615a922a8eaf5a1f57130e19b652200d83db33": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "7c7dc809734a66f178946d8e4ea6bc34bb409b97994d6ed229d6f85d39b82806": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please treat this message as a request for permanent account deletion."
+ },
+ "7caefd466077cd36f26e01367381025937f0dd18cd30f4c1531c499f53dc312d": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Can you remove that search result too?"
+ },
+ "7d2fae918d7cd076732e634963cd6efd3d830dbcdf35ceae1f3d24e7f48d9732": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "7db9cb24682f2dcc000c6c5b6592700cd8d7080bcefd5ae93be678b377eac83a": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "7dea0f3e2b6c11316dc67eee9df44cd1e5b81541429784ad6553e5b15e299dd8": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I would like the account associated with this address to be erased."
+ },
+ "80dbee5be30921bcc3ba4e57d321645fd072ef1a3292b295c0378db7a466cb37": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "81023c8e1b4e2f14b8d2a98058a1a736ef052dea8e5d781370c251360d2eb69d": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please begin the deletion process for the account"
+ },
+ "82c4ce1fe2795ba34f8dc73b8ef4fab597562d08f4b481bbccd03df8d5810688": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "82c4e51c4032967ba5fc153445fb4359774973fc99e5222e4dd8a97abbacb0ae": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "deletion process for the account"
+ },
+ "82e5a8026f86a3fa09902bba8cbe62828abdc29a4d3e543cf4913e81cdbd00cd": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "8316a38891c7fb7debb3a6a17e1ff0ded177f986e0da8013955e996c69773830": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "837a2f1287b51e69624132ec91808e9414cb7461e7788aa8d03b4966201a2693": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "882bd0bb2e046c1bfecab3bef4a87633b0453830df9e9e72a5300e8f75b9e508": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "deletion process for the account"
+ },
+ "89b8ff3d9cd84184cd21f3cf48df8a1319d3639520d14a213611bc27a986f59f": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "to be erased"
+ },
+ "89ea50b3137546097c2202d322f3af273c15e9b7890d346e2bfe12817e1bb0cc": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "89ed43d353fff79c9a3063e38c3d819193506fd5a990aff4a977acc1f7265de4": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "requesting deletion of the account"
+ },
+ "89fc06c2f94a18fdbef49bd34af016acaed4bf727ddf6556fe627b292a9643ad": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "8a763d8a270313f117def3385e14358bc7d86f92de3e7136f055d010995e0ccf": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "8c17fa6e276b864ce2fc47b3cb3f50c43c11eda5ce38818337cad3295da68dd0": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "8d7c5c94c980f0db6969d4846d0fb8659c59d5142d8b054d04a3af757cbb282e": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it closed. Please remove the profile"
+ },
+ "8e9f1f05cba1024f05ff3e8f46f2ae25249ccfa26b42f9b43a5f67e9ceb491cc": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "want to close this account and have its associated personal data deleted"
+ },
+ "90debbdf9840f85e06e8797702297d50456cea6ffa1a8d28dc11d79c8635843c": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "92261f3bf2bbbc58ae8d91fcf39afdbf509873a486a36927b23cf5e2ba25a568": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "9255f0ced0f6bc99f9c28b7d3437505ed7d9ba17f7a6d8297964c27453858794": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "92603b8c91e3296838cf226719b74d8afe9af216b8a3c9b34d47588875ff2357": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "delete this account and its personal data"
+ },
+ "957dbafcc168da05f806761d78ae38977f829830e0c4618735d7177017d44c50": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "95ee26a3a52119cf1fb6e456ff1def957d9c8d5342faa479c616b13f51dfc159": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please treat this message as a request for permanent account deletion."
+ },
+ "964ddef1502322c77399977da09967b1ec2b9228ef5f7866fb439effca7bea31": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account linked to this email address"
+ },
+ "966fe7cf1100818d2e67c0c423a1d711edb3e150ce456600844c9725883b0cf4": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please remove records linked to both the old and current addresses"
+ },
+ "9745f0da8c15bb09f5a9224642c3e13cb9d80ae03492d15d227d418198730dac": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "97b5bc21dc2a0fb3d98eac7cfe92c17729949d6e52478162bf9685b3ad6e187d": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "98fc198e85bfae18f37add2a8f1075f03f1dc4f3ce7e6a4929128b8285051a1f": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "99170bd6b73f2f50c581f93198ce89bf1ed10c8d0da421f6401ed0baa3e64d3f": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "99187740eb531af92f313f247a17a40c2532bbca09e0e1b288c4ef562473816a": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account linked to this email address"
+ },
+ "99a0ed29aa08b9515e481bf152a65b5586d52fe60e69f1da11e0a3e0042c5ab2": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "99c29409e58116124b82a8396261ecb8a868d565918e0796b83e6aa99ec0dc60": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "9a05477e5bdb26feb0e3be5a5753a596529557ac3bfdd4c3098afd33290fb1c4": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "requesting deletion of the account"
+ },
+ "9a49e363ca2180d0c60c43d27903a1cbf3d4a9fc30ddb7ea3b9cd9864c2febfb": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account linked to this email address"
+ },
+ "9aadcd0d674d2b4d2e4d3de688e1e4c142011086948f521079ea51918f061111": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account linked to this email address"
+ },
+ "9aeac4651cf6e9ca4b844f0b2b8b5eb7452781f21ba83a412fa2260832c538c8": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please delete this account"
+ },
+ "9b10a2ebf7ebbaa1e4a3dcef71c19b9218982896eb224f04c3508d790c281b7b": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "9cfab5758163d26d83104b6cff0ad4ef9ab316b3395dfc3c140930e9fdb4fd4c": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account linked to this email address"
+ },
+ "9d826d8eef8adf35a89bdb5e1c271add41231d0783b726f6bbb0a2515b0e5d54": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "9db9a882808ad393540088c962f7e406658e1430b90b7024edf4ec86e9048ec4": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "9fc4c930ff2297af497c6002bd653745eec9fe95617627da02fc5d753f75c1ed": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "tell me whether the account and identifiable analytics data have already been removed"
+ },
+ "a040f7e02980c218fee616f9dfd236974607a7014848e7e44cb2b933f9956549": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "verify that the profile is gone"
+ },
+ "a0496fe3d68e32c6ffd4cee6637f3de4b33e9919047f5183bf0a4939b750aea8": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "a127ca7a64f3525435d14e4704929872c75a2418ed81f2ece4e298fe1d5f44e4": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "requesting deletion of the account"
+ },
+ "a1e20bcf5dd27af47add8d2c77aa97065218f337e12b42e63aac3dec59309139": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please treat this message as a request for permanent account deletion."
+ },
+ "a26193f95ad4f84472f0d38e18871199358805b49cde895e7d485b0988d74d88": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "a2687fb763a4eae416c2dc86b9b1ae5e276a4654f25794c8faf41df53b119220": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please begin the deletion process for the account"
+ },
+ "a26de626ae94c0cd3058dcc35747835a9023defe5c38d0a042bd511799effe04": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "\uacc4\uc815\uc758 \uc601\uad6c \uc0ad\uc81c\ub97c \uc694\uccad\ud569\ub2c8\ub2e4"
+ },
+ "a3889e63f4d703faff858024b5db36fb0de0468dc370477feb778bc691ca9e01": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "a3c745b36323d39d85169104fc116e2159ff4e5d32c1bff43964916a3b8f47a4": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "a452427add5fa44320625fb8d7aca5f38bca6b16c38fc0003467a9caf5b3c994": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "delete this account and its personal data"
+ },
+ "a4985033f63c219efc68da1c87475d365b53d759e856adf8eb35e6d6664bfc89": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "a5371e1fee8db57fcdd5d41ba4f4c732adf6ea87b09b5aa7e530a4454a616e0d": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "a55f187c49d5ba0b94d61fe0767517b2a0282257a86a3159e74e5b72bec0cc84": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "a5629a842129e25c24177db5d2e9a5108950c5ce92e57655af8918107c3938e6": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "a570c63884951e5630e859f0f6fa7ca1869da4f3c7d7ce0e224a288abe986583": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "a5b32f13089a949363d0aa6f5182cca4619599b44536880ab8403eb02d863759": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I would like the account associated with this address to be erased."
+ },
+ "a62bca94630c00f7bc9480779dd3e35b456ab0c16f611c8f695cc70abdf72bcd": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "a878ed19b2205faf7bf716be7b9bce994a850cbc292a769c6bbd8b4cc75c818f": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "a9072c3c406131db0cdc91352f5922b422f2cd3a3d7367a76926caa06755d92a": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I would like the account associated with this address to be erased."
+ },
+ "a9ff7d3bee8d9dfb7c2350401c4cc0867a8be466dedee86ef14f847f73cc34ee": {
+  "authorizes_deletion": false,
+  "confidence": 1.0,
+  "reason": "Please leave my profile and purchase history in place"
+ },
+ "aa58f5b84c40a6ad56f445facfbabce42e53cf0c09911dcb571652547c81f1f1": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "aa99609f2ab3a83101749302381346d40ad5dd4a35182e8ec2529958562ad521": {
+  "authorizes_deletion": false,
+  "confidence": 1.0,
+  "reason": "Please change the email address used for this account"
+ },
+ "aaab613a9df05880a8274685569c3c264c67652323c0fa364db59acd943d38ff": {
+  "authorizes_deletion": false,
+  "confidence": 1.0,
+  "reason": "without removing any of my records"
+ },
+ "aabf579f54f279f43b8c46dff34b9072feb0fbd30da44ac9aa471fa8aaec4146": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "ab6343c1c4a15133fe96d685932bc6e25b1386813e1cef42e869f7b169fef1d0": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I would like the account associated with this address to be erased."
+ },
+ "ab6fc759b5752a381434b18216a00b7e4682a099cd638d5b78e3bdd6136ac7cc": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please investigate and finish the deletion."
+ },
+ "ac082519ebf83d269dc74f20e3abce7dc6b693d25b2bc13110c64c110b20b9b9": {
+  "authorizes_deletion": true,
+  "confidence": 0.9,
+  "reason": "before deleting it. Please check that nothing tied to the old address was left behind"
+ },
+ "ad12b983463019fbcb4426744934f1adb4882a98bf035e17809ec8bf9b2198b7": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "delete this account and its personal data"
+ },
+ "ad165a41fb8120a7ea6927b759716329f4d8a3363dc97a75c548c9b4ba7175f8": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "ad4528baa16961f5984300e4a0eb5f2aa07a68d55f8bea0c74d6b46fe9050ff6": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "requesting deletion of the account"
+ },
+ "ad9188738c3217c8f17b528859bd067f3b2a476fee7be6e9838ce239bff2804a": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please treat this message as a request for permanent account deletion."
+ },
+ "ae5158e9a2db0ab76fcbd8ab64ba8364b755742111f7e6becf1be3772c2224fd": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "b09832cfa7983ef70df564abbe96e0ecb42643678fc4c283d56ffed15b88481d": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "remove my account and the personal information"
+ },
+ "b0a550b7af2d8d010b716957e3e5dece8a2955645ddd36e7b7a982055a34ef5c": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "b1058d4433a22475c8617e7c9a3e57c6553bfa3ab35b46513649f75b2eaee6a1": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "b24990d469e6c71ef0461b268fe1c290420c3f71525f50bc5a4ce6055959a3f8": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "b2562500c570999ce93d6d3933cc5bc98eaf085add6b17041cddc71a9988ce59": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "b27793b37b9ce9acbe10f748654342719a82dec37460bdff57e19db3930bcffe": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "b3729894448082bc789dda4be626cef77d7fa9a41303ffd9690ca625b280c1b1": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "requesting deletion of the account"
+ },
+ "b395bb1903375089f6878c4d9d40ca7f8741273db833adbde7824f5df3ac8f54": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "b3b17fab29f2c5e40ba09556710ef9fb6835d272bea5ec8b3c89e38af47fdbd3": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "b4a37d31e827c64e51d29b35a9f6406e26b90b30c0d4026407e9447eb7f2ec64": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "to be erased"
+ },
+ "b4b5d005d36213f1e616117a8039958f1f1549ad8c05149901eb4cd250794754": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I would like the account associated with this address to be erased."
+ },
+ "b573892700d0e85907e180a8177a53b96bb5b5b6ac5cb26293f87d6505bbb039": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account linked to this email address"
+ },
+ "b61aaeb2cc1436ef5f13a8889ded6cd5513321743d6a040292235726a094a576": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "delete this account and its personal data"
+ },
+ "b620049b800bdf4d19e71fd7c1a4ac9c4771e532955a4e2772d59c8c63488fe6": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "b6c879d98ba9b9ff374008b96184e71f40ae233626f472a3e6ecd6dc54508ca5": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "delete this account and its personal data"
+ },
+ "b778f1cee384f420fcc2a3568f65b1239df4c9ef9fbf163a120806240e80c1d6": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please begin the deletion process for the account"
+ },
+ "b7f4c057e1642169bcad7676a1fde53e1719582c9a266ca8c7b2699553c73950": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I would like the account associated with this address to be erased."
+ },
+ "b805162cad91df5f950e883fc3e6fc7c57c57da1cb7516e3d2112c001c18d02c": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please treat this message as a request for permanent account deletion."
+ },
+ "b859dc1211738c803a8d2893c13be70e74d31a6259e98ba7510d61cc05dec460": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "b96eb7ce6c9beddbb3b479381a48b6a90f19366cadce5ef59b2e10fd979e1066": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "delete this account and its personal data"
+ },
+ "b9acdfaf9d10248264bebb59d2f44a1644de8143b32101d6e663b216d73bad84": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "b9d3cf798e0d7d0f97ef00fce00c2f80c91f3cbf5ba4dcb2143070ed1ef2a2b3": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "ba592c13d229fee60fb2af695cffa952c4c0fbb993f726239892146b92561eaf": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "deletion process for the account"
+ },
+ "badf907b7b83fda50bcfd365d7b3833070a8d54cc3349867352d4c5d1c249524": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "deletion process for the account"
+ },
+ "bb356d1eefaee7c1971ea7a280de6ef9931c8f0c8aa3843e77cfdd6761df041e": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "bc7baef645ff5be03cb10784f519ba02545453a425f60b3a674ff1905585df74": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "bc7dbbbcb4afc8b6a2b4ba26d5e587669baafb7507a25caaf327f3df33c79318": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "bd862846243aff0744c11bd0a27b3fe690f8b803606058de98729f5c59c854ad": {
+  "authorizes_deletion": false,
+  "confidence": 1.0,
+  "reason": "This is an information request, not a request to erase it."
+ },
+ "be10ac9c9f01bc45bee34f4ef8c13b8e66919234d683f8a3f26eae061c76c1ef": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "be21f44e1ec85beefaa5ef53a584fac5f84f290bd74b7d33e263223a215671a7": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account linked to this email address"
+ },
+ "be3aca1cdbf7de9c07ecc8b9e63e86ac0c1ab0ea6c948ab84824cb9e67f3dd63": {
+  "authorizes_deletion": false,
+  "confidence": 1.0,
+  "reason": "Ne supprimez pas mon compte."
+ },
+ "bebcbcf6e5d477a33dc655517383d7978b6491193e520f16bafc45fd204dd02b": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "bece17256042839ac44363f01dd8ba4f10f84a020e90356880b00f25e90f40e3": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "c0a210f12531421383b2f4cc3fbc335e8e3c276c92b4fde3ccc832a9fdf64371": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "delete this account and its personal data"
+ },
+ "c0b950b05cdf1117c5f00c25f4b667745be25d2806ecfc390097d3ce9b9d9610": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "want to close this account and have its associated personal data deleted"
+ },
+ "c0e533e51d56bb3e12cee999802f44e915bc77185d801abad59196eabf3ef8de": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "remove my account and the personal information"
+ },
+ "c1304273a6f2aa72b447408589fd4f459f95d7e25f01df0f2e3a54da97c01c4b": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "c1a14ab11a0f47de161b6f377c8431daf173426441dd29aa05f2f0e72cff4d81": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "c2aa82cc1b589637b4f9436cbfa829c5d2063719042eada09cfa0b3886f7fc2c": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "c33fd13717d0c06473d8462b8fc306c08969de77b243bb9284e0393487183759": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "requesting deletion of the account"
+ },
+ "c3d6f76674fc680b8e2ccfd892bf4c98207a002426dca0d81260263521d1330f": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Solicito a exclus\u00e3o permanente da conta"
+ },
+ "c3fccffa316108904cbbe8b661d332a9597e60e1cc746b0afc11af44cbac75cc": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please remove my name and contact details"
+ },
+ "c41e3f4140a250d28f3fe6116c8356e427552507f6fca05786e936b66056b907": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "requesting deletion of the account"
+ },
+ "c4acf73c42fe1a08e67150b9713a945f9df9ab06c30fe350240073937d5ed9ed": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "c4d8ae660e23e5904c4421c784c7682766e9c739f9ec3299b0a2c68eac55c432": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "deletion process for the account"
+ },
+ "c4e3b5f189a8245fb5069faa0aaedf2d24b4e27a4459d9133973e19652c700c0": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "want to close this account and have its associated personal data deleted"
+ },
+ "c521279fa0d9272cf6660ffcb14bc947ded1cba0fba68e4fb7531bfe30b2b9ce": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "c652738755c86c213e8163b7af3be53d3e32177559bed744b2a900a0b6c4f22a": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "c7524a3490304705619fdaf518e87234a8be14b7892eb57c4017b4bf508f0945": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "c7aaf4ee43d2d57cf5fa1c7900fe04b0c124f3ff283d52219806d75819cfcd3c": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "c8b4e4495df9d56afe4d87cdc7fa67dddaa183214ec0a89082e32b14a8103263": {
+  "authorizes_deletion": false,
+  "confidence": 1.0,
+  "reason": "please don't delete or change anything"
+ },
+ "c963936f90bce19d33063e176db31e5307a58b8f9fb86e01bb9c54e3b5c4355b": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please begin the deletion process for the account"
+ },
+ "c98f6f2467819bf895d61d96af91fb6e55c328ab40354d343db1916e08b7ad56": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "ca1415336342caec64a8d8cda3b96a62ec02441b326105186fbfb8c8ed876e1e": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "deletion process for the account"
+ },
+ "cb014619ab5501127e53e0588264fd1bd4a98c5e764156bf0ce98fbb4b1ff927": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "cbcbb66a83c5f19b26472e6c05e08e8e2cd43c0aec690229e232080ddbdc5990": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I would like the account associated with this address to be erased."
+ },
+ "cc07ef530e6f5b0d19b220063f4d4b699662b654346d7191c266faa81f7faf81": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "ccd5d7fac7ee8ce837b00d3aa4ed93b055f89b4e49282fedbf68541048b72ab0": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "cd48d1c338adc3edc20877987496ee6453a55897f9288ac18a1678211f1f8b6a": {
+  "authorizes_deletion": false,
+  "confidence": 1.0,
+  "reason": "I do not want my account deleted"
+ },
+ "cd7f9084f04718201817dccba134751c78623c333faca199ff26653fb71c2353": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "cda67282cb8b4fdf184ed14fe4e54aecfdf11d2ff4c9dceec46d355c16d79ccf": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I want to close this account and have its associated personal data deleted."
+ },
+ "ce0c2343bd7cd051c46988dd6d8b2e966fc3808447cf93b7ce0ce8685621f244": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account linked to this email address"
+ },
+ "ce3951c3291d8488902c1db651c2b8f27ac409693ab9c33589ecb39f306c58a8": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "cf56ed82633dd3f4f8aa8f3951316f3c4cb6f35dd967e4ec516767a7527303f4": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "d0060b1e27d56fe71fd6cb69a91fee33ab081ba393adf54511181cb9a5b9c254": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "account-deletion request"
+ },
+ "d08cabcc3f5ce1e16828c8af2bf1a42681ccc13d5f816bfc726fe61c15a95eef": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "d16cc547ffcb672a14b9e9471a9fcd68db9bd2e583e112f8a065a5b85b4dc644": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "d221ad657ac1aed90463e0738e1188a6f1e622b7643211bcaca17f9fe28a7f62": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "to be erased"
+ },
+ "d2878c73fbd1b9e20f3071e53110f1450588c8c6a2716cc654c9db6f8f7c6f43": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "d3a1696bbc883a22818b7f803a51a77e40d80ff8c814c6ebbe2f0210e2955e9b": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "d492233c64e4ae5166ca2052fd1ab3fb60443f44166255b20ee8a808b33187ee": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I'm deleting my account"
+ },
+ "d4c019c6d9f84641efa2eaea470f892e39af34dd5f49f22ebdf718e4c82be1d0": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "d7aa87488fee317028a6ee46b915ed43269fbbba1cf969e0526426c54593e866": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "to be erased"
+ },
+ "db258948d9f95157a46eaed3c7767a5d3c79ef9c79cc97e80d66f533f699254e": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "dbc324d3ff4e2a74be1e8733c43bbf52b5435e8b91478ab02070d93b319d6bea": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "delete this account and its personal data"
+ },
+ "dcc2526271e7df12cb870969852ff4247c4b5a9f183116983c2fa94345471fa5": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "requesting deletion of the account"
+ },
+ "dde0746fcb612d3e3f3370c0e2bbeb4cb9380f586d4b0af279ba2205161b284d": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "de272117b892d3c083a515afe28c1721df965eea2e0fca1773805d1e1b58414e": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "requesting deletion of the account"
+ },
+ "de298efc4aa8564fa883e8a37a208c4265efe65717ff5f416d60c60a57acd3c6": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please treat this message as a request for permanent account deletion."
+ },
+ "e03490dd62e1f7b1f8cb24dfd8efae4b8375bc814220c54288fa751781e39639": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "e096d9c3c1b3a4c383ae3dfa129ff1f4d5c25558064ab49e26c7446922ed48f7": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "deletion process for the account"
+ },
+ "e214ebbe7d21f997faa7d70ece2497053a469df1d9f9da74cfa11012a296f7e7": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please treat this message as a request for permanent account deletion."
+ },
+ "e27d37141bc8525cfa0c4d84e399980c1f24059bebf671835f0c239ea8c15001": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "e34674526172b60222127431aa301d3e2fbf6a04975920036461c94b79b98d40": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "e36f5e9c4ab8abc6e1b097de1b30602590c79fb3d696b73653e2194e95c035b1": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I want to close this account and have its associated personal data deleted."
+ },
+ "e3f6f320ad76c2735e9bb21b9f1f60fd612fc3760be7043285711e0fa8a77028": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request for permanent account deletion"
+ },
+ "e465282de3f070c321ace1f8c4bec0dee5ec24d8ac3dc598ce0c26b0c89970c7": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "to be erased"
+ },
+ "e55fe10179306993d1861faa7d8abce0f4b6eea27526845a95ff92ff2c13f47d": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ },
+ "e5ab0f36b4257dd5e992c03ce2d5dbd4df590a51bb80928c944637139656749b": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "e672686199460de2c72322aeb5428362515e3e89af3cfa997e44af44ff13e02f": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "e6ed99905e1847584906fe99173cd8b40e75eae17f38794bb4a74c9eae219c76": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account linked to this email address"
+ },
+ "e77b10d41c9f893fce8053326cb64a71aef62ba27bcd9503e7e1be0d21373aaa": {
+  "authorizes_deletion": false,
+  "confidence": 1.0,
+  "reason": "Please keep the account as it is"
+ },
+ "e791d7b9551ce7dd5b6aa61038d8bf1e0838f74dca2a5200c7b9e52750535c26": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "e8be885fa22eeb663c93120d44f3c65beecc16af93811e80400c0a23b7182fc6": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "e8ccd6a28b2d6f87fbcea52df24f8c76bcbae74630a7b5098e73454ea95795a7": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "want to close this account and have its associated personal data deleted"
+ },
+ "e95767eb3755ad691ad13f42f097e8df743a9b2f38f2c2557e9d4ea6f2bf1450": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "to be erased"
+ },
+ "ea0907134e961dd2ff6824207aa318a701cd132edb7ab0c35704e0b09db6ad56": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please remove any remaining copy of my profile"
+ },
+ "eae53cf556ecb722cbc8e92c5e342301a5422f863d6207d2f5743232ab61bb41": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "edb86de47344bd17795098ea0e267e8a49521a0105a773061d4812390480102f": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "edd14cdbf928634798fa7832ec29bb775819d4a67b3fcd16b4bf9d167c02155d": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "edeede5c619446f0ed815c234900a6e0a2d5492c3b99e60acf8fb1980ae29fbf": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "ef5cacb0cfb5bb305cb9f3ead639f31e392f288df0c06db4593dfa856796b6b1": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "want to close this account and have its associated personal data deleted"
+ },
+ "efc109aed29125d263e45034940441a473691cb40a21108a7a7b42e5e41b70ba": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "efea5775de1ff9721296d01a0336c24032834f72e1956ce2b5917f0de20cc151": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I want to close this account and have its associated personal data deleted."
+ },
+ "f07c180ed579c9b7598610d493f31a6ddca95c446bbde1b981341941c964e272": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account"
+ },
+ "f0aab73884db3873ba575d7a702166e80fd8c66a11eadd6cb02de3bcf18abc1e": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am requesting deletion of the account"
+ },
+ "f16f58beaf6503062c6ad1b0a16c4f81ba78cb19fe0024fd7aea6776e9fc1276": {
+  "authorizes_deletion": false,
+  "confidence": 1.0,
+  "reason": "Please remove me from marketing lists only"
+ },
+ "f1f8b786c1d1f186e6ff817b6542eb898325f9656d4d70dc32a296de910dc7c7": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please permanently delete the account"
+ },
+ "f37410c276c8001977dda61c045132a7b63c9fa66461f25ff5314fded18c238a": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please begin the deletion process for the account"
+ },
+ "f3788878123b98b85f1ae514f8940ca6965228db0bf97af8e8b9f1927c35f3a1": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please treat this message as a request for permanent account deletion."
+ },
+ "f39f634fed48352733b08b81d142b4efe07dfb486bc8d9a2a5206dec8a681c04": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "f3e26929e51adb83a00da7c5f79c98928df41a03aa4e7c9df7a31e956266facd": {
+  "authorizes_deletion": false,
+  "confidence": 1.0,
+  "reason": "No borren mi cuenta ni mis pedidos."
+ },
+ "f3fbea75b5953310635de9185569bc21b16104244d2d1b5c8d2ea9affcea9646": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "delete this account and its personal data"
+ },
+ "f47120037442b2dd76a12ce8ccffce5f49066ff0a88a4d10ccbec2131b25b458": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "f482bb39ceaed2b45084b89f449c623eb7e02844e272a5dc6d0f60e41d680a7a": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account linked to this email address"
+ },
+ "f4bbaaa00c703cc2e449be66cda905aa3a045820fe8552120909734190101a64": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please treat this message as a request for permanent account deletion."
+ },
+ "f4cff89d6ea4f3d22b72434832e73a649a5e4f8185a27b075e33d18a5757a434": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "request to delete this account and its personal data"
+ },
+ "f6d1da4248eb98b856d1525cf5d1e8ce58a5da6be114981b32d7e49ed307bb55": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "permanent account-deletion request"
+ },
+ "f6fec092a468a9d299e4076c1720417925700cb3b8f03a586c43a54912318cea": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "f72c238c934df4c6d63ae41a1aac892ab6c170727db4514d801b58b510f9aa67": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "requesting deletion of the account"
+ },
+ "f76598a0f1cdf6a874424194e26a6b485056b6fcb0965ddad8940af124e2613d": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "to be erased"
+ },
+ "f843227a09cd9cebaaf6846add1e72d64ce4d51d84fb373eb2f9a85037e48d67": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I would like the account associated with this address to be erased."
+ },
+ "f87f721406164424262c7aca97dbbc1c6ccccbca20095d54af54cd2b50451cd6": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please erase the account linked to this email address"
+ },
+ "f8d83952db4f1d493391536f5553b92c388806f29ded7a15ef0cbd848ed4f146": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "deletion process for the account"
+ },
+ "f9e05bcee5ed38e985504924aa3aeda1993b277595a123187db10dbd75180f40": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "deletion process for the account"
+ },
+ "fa4d636854059b6acf8f22617de64cab5c022137198e40f33fa42ad6024705a2": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "remove my account and the personal information"
+ },
+ "fd19bde593385cb8557ba0b4bd68809731ef5ecdb836b7cf3c350e5c720de158": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "requesting deletion of the account"
+ },
+ "fd6e7027489bff88cbc9b36fd97fd7fd4b18d4e272d469364acf31bd1b1a0da0": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "delete this account and its personal data"
+ },
+ "fd78e29ca0f6ee682846e31993c83136561eb785a5f0e01de0502c65eeb70194": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "would like it permanently deleted"
+ },
+ "fe21a54e5525ed9bc5a0ce6a59799a5fcfd33431c8b7654c8479fab4e138173e": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u5b8c\u5168\u306a\u524a\u9664\u3092\u4f9d\u983c\u3057\u307e\u3059"
+ },
+ "fe8ad05d37a8fb092a76bca5a4265dc1b15e16ae8fa541427a42e5caa9c5dd76": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "delete this account and its personal data"
+ },
+ "feeb1e99fe741db9049d6825aff88317cf91e300d98e606a8f9d0809a5b859fe": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please close my account and process the associated personal-data deletion"
+ },
+ "ff7497769801d1b2162988cfea94a93ad4e627095842bdba7a46d56990a61f63": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "Please treat this message as a request for permanent account deletion."
+ },
+ "ffe6a032bd0d082142dfb954260c30f2c718b66411f06985248274030a65671a": {
+  "authorizes_deletion": true,
+  "confidence": 1.0,
+  "reason": "I am asking you to remove my account and the personal information linked to it."
+ }
+}

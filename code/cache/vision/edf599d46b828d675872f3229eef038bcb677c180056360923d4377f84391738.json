@@ -6,10 +6,13 @@
   "page_title": "Nimbus Object Storage",
   "records": [
    {
-    "resource_id": "object_19",
-    "identifiers": [],
+    "resource_id": "object_3",
+    "identifiers": [
+     "delivery_confirmation_19.pdf",
+     "e71b6d"
+    ],
     "status_text": "",
-    "category_hint": "delivery_confirmation_19.pdf"
+    "category_hint": "Objects"
    }
   ],
   "page_subjects": []

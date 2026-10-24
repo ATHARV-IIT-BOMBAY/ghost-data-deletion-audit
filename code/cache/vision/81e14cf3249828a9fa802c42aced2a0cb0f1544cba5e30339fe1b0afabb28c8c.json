@@ -11,7 +11,7 @@
      "marcus.lee@northstar.shop"
     ],
     "status_text": "Collecting",
-    "category_hint": "Data exports"
+    "category_hint": "All exports"
    },
    {
     "resource_id": "export_1260",
@@ -19,7 +19,7 @@
      "ingrid.dahl@outlook.com"
     ],
     "status_text": "Ready",
-    "category_hint": "Data exports"
+    "category_hint": "All exports"
    },
    {
     "resource_id": "export_1259",
@@ -27,7 +27,7 @@
      "sara.kim@northstar.shop"
     ],
     "status_text": "Packaging",
-    "category_hint": "Data exports"
+    "category_hint": "All exports"
    },
    {
     "resource_id": "export_1258",
@@ -35,7 +35,7 @@
      "daniel.park@northstar.shop"
     ],
     "status_text": "Ready",
-    "category_hint": "Data exports"
+    "category_hint": "All exports"
    }
   ],
   "page_subjects": []
