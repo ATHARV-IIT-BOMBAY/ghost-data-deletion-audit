@@ -1,0 +1,59 @@
+{
+ "file": "security_audit_explorer_20260905.png",
+ "model": "gemini-3.5-flash-lite",
+ "prompt_version": "cf20ae79deb6",
+ "answer": {
+  "page_title": "Account events",
+  "records": [
+   {
+    "resource_id": "audit_record_003",
+    "identifiers": [
+     "user_03"
+    ],
+    "status_text": "Valid",
+    "category_hint": "Account lifecycle"
+   },
+   {
+    "resource_id": "audit_record_002",
+    "identifiers": [
+     "user_03"
+    ],
+    "status_text": "Valid",
+    "category_hint": "Session management"
+   },
+   {
+    "resource_id": "audit_record_001",
+    "identifiers": [
+     "user_03"
+    ],
+    "status_text": "Valid",
+    "category_hint": "Authentication"
+   },
+   {
+    "resource_id": "audit_record_006",
+    "identifiers": [
+     "user_03"
+    ],
+    "status_text": "Valid",
+    "category_hint": "Profile update"
+   },
+   {
+    "resource_id": "audit_record_005",
+    "identifiers": [
+     "user_03"
+    ],
+    "status_text": "Valid",
+    "category_hint": "Authentication"
+   },
+   {
+    "resource_id": "audit_record_004",
+    "identifiers": [
+     "user_03"
+    ],
+    "status_text": "Valid",
+    "category_hint": "Authentication"
+   }
+  ],
+  "page_subjects": []
+ }
+}

@@ -248,7 +248,8 @@ class Engine:
         steps: list[Step] = []
         findings = 0
         future_checks: list[Step] = []  # resources with no state evidence by audit_at (switch S4)
-        links = self.link(subject, iso(req["requested_at"]), audit_at)
+        requested_at = iso(req["requested_at"])
+        links = self.link(subject, requested_at, audit_at)
         for rid, aid in getattr(self, "workflow_links", {}).get(cid, []):
             links.setdefault(rid, (f"workflow event {aid}", False))
         for rid, (why, late) in sorted(links.items()):
@@ -267,6 +268,14 @@ class Engine:
                 res.trace.append(f"{rid} [{why}{', late' if late else ''}]: no state evidence by audit_at")
                 continue
             bad = drifted + ([latest] if latest.state not in ok_states else [])
+            # A sighting from before the request says nothing about whether the deletion worked:
+            # every one of the 41 gold findings cites evidence captured after requested_at.
+            stale = [o for o in bad if o.observed_at < requested_at]
+            if stale and len(stale) == len(bad):
+                future_checks.append(make_step(verification, system_for(rid), rid))
+                res.trace.append(f"{rid} [{why}]: only pre-request evidence ({stale[0].state}@{stale[0].file_id})")
+                continue
+            bad = [o for o in bad if o.observed_at >= requested_at]
             current = max(bad, key=_rank) if bad else latest
             system = system_for(rid) or current.system_id
             res.trace.append(f"{rid} [{why}] {latest.state}@{latest.file_id}"

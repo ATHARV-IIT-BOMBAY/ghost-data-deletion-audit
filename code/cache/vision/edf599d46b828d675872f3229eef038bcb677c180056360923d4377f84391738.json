@@ -1,0 +1,17 @@
+{
+ "file": "object_storage_browser_20260213.png",
+ "model": "gemini-3.5-flash-lite",
+ "prompt_version": "cf20ae79deb6",
+ "answer": {
+  "page_title": "Nimbus Object Storage",
+  "records": [
+   {
+    "resource_id": "object_19",
+    "identifiers": [],
+    "status_text": "",
+    "category_hint": "delivery_confirmation_19.pdf"
+   }
+  ],
+  "page_subjects": []
+ }
+}

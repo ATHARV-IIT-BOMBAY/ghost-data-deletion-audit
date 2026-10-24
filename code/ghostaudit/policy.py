@@ -10,11 +10,12 @@ from .models import Observation
 # Required final state → (state(s) that already satisfy it, finding, remediation, verification)
 TREATMENTS = {
     "ABSENT": ({"ABSENT"}, "REPORT_REMAINING_RECORD", "DELETE_RECORD", "VERIFY_RECORD_ABSENT"),
-    "REDACTED": ({"REDACTED", "ANONYMIZED"}, "REPORT_EXPOSED_PII", "REDACT_RECORD", "VERIFY_RECORD_REDACTED"),
-    "ANONYMIZED": ({"ANONYMIZED"}, "REPORT_EXPOSED_PII", "ANONYMIZE_RECORD", "VERIFY_RECORD_ANONYMIZED"),
+    # A record that is gone exposes nothing, so ABSENT also satisfies redact/anonymize/disable/block.
+    "REDACTED": ({"REDACTED", "ANONYMIZED", "ABSENT"}, "REPORT_EXPOSED_PII", "REDACT_RECORD", "VERIFY_RECORD_REDACTED"),
+    "ANONYMIZED": ({"ANONYMIZED", "ABSENT"}, "REPORT_EXPOSED_PII", "ANONYMIZE_RECORD", "VERIFY_RECORD_ANONYMIZED"),
     "PRESENT": ({"PRESENT", "IDENTIFIABLE", "REDACTED", "ANONYMIZED"}, None, None, "VERIFY_RECORD_PRESENT"),
-    "DISABLED": ({"DISABLED"}, "REPORT_ACTIVE_DATA_FLOW", "DISABLE_DATA_FLOW", "VERIFY_DATA_FLOW_DISABLED"),
-    "BLOCKED": ({"BLOCKED"}, "REPORT_RESTORE_RISK", "BLOCK_RESTORE", "VERIFY_RESTORE_BLOCKED"),
+    "DISABLED": ({"DISABLED", "ABSENT"}, "REPORT_ACTIVE_DATA_FLOW", "DISABLE_DATA_FLOW", "VERIFY_DATA_FLOW_DISABLED"),
+    "BLOCKED": ({"BLOCKED", "ABSENT"}, "REPORT_RESTORE_RISK", "BLOCK_RESTORE", "VERIFY_RESTORE_BLOCKED"),
 }
 
 # Resource family → rule_id in deletion_rules.csv (category resolved per observation where needed).
@@ -40,9 +41,12 @@ class Policy:
             return "rule_02"
         if "MARKETING_PROFILE" in cats:
             return "rule_10"
-        if family in ("support", "object"):
-            cats = {o.category for o in obs}
-            return "rule_06" if "SUPPORT_ATTACHMENT" in cats or family == "object" else "rule_05"
+        if family == "object":
+            # Object-storage keys are the storage location of a support attachment, which is
+            # reported under its support_ id (gold case_07: support_001, never object_19).
+            return None
+        if family == "support":
+            return "rule_06" if "SUPPORT_ATTACHMENT" in cats else "rule_05"
         return FAMILY_RULE.get(family)
 
     def required_state(self, resource_id: str, obs: list[Observation]) -> tuple[str, str] | None:

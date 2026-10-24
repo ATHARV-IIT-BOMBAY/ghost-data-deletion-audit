@@ -1,0 +1,27 @@
+{
+ "file": "connector_management_console_20260807.png",
+ "model": "gemini-3.5-flash-lite",
+ "prompt_version": "cf20ae79deb6",
+ "answer": {
+  "page_title": "Connections",
+  "records": [
+   {
+    "resource_id": "data_flow_1121",
+    "identifiers": [
+     "jain.aditi@gmail.com"
+    ],
+    "status_text": "Healthy",
+    "category_hint": "Topology"
+   },
+   {
+    "resource_id": "data_flow_9846",
+    "identifiers": [
+     "lucia-torres@gmail.com"
+    ],
+    "status_text": "",
+    "category_hint": "Topology"
+   }
+  ],
+  "page_subjects": []
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "file": "marketing_profile_console.png",
+ "model": "gemini-3.5-flash",
+ "prompt_version": "cf20ae79deb6",
+ "answer": {
+  "page_title": "Audience Operations",
+  "records": [
+   {
+    "resource_id": "marketing_001",
+    "identifiers": [
+     "sj.park@naver.com",
+     "+82 10-5837-9451"
+    ],
+    "status_text": "Live",
+    "category_hint": "Audience Operations"
+   }
+  ],
+  "page_subjects": []
+ }
+}

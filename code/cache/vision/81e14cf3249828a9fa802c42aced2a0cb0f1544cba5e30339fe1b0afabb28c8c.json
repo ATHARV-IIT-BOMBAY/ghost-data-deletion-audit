@@ -1,0 +1,43 @@
+{
+ "file": "customer_export_console_20260618.png",
+ "model": "gemini-3.5-flash-lite",
+ "prompt_version": "cf20ae79deb6",
+ "answer": {
+  "page_title": "Data exports",
+  "records": [
+   {
+    "resource_id": "export_1261",
+    "identifiers": [
+     "marcus.lee@northstar.shop"
+    ],
+    "status_text": "Collecting",
+    "category_hint": "Data exports"
+   },
+   {
+    "resource_id": "export_1260",
+    "identifiers": [
+     "ingrid.dahl@outlook.com"
+    ],
+    "status_text": "Ready",
+    "category_hint": "Data exports"
+   },
+   {
+    "resource_id": "export_1259",
+    "identifiers": [
+     "sara.kim@northstar.shop"
+    ],
+    "status_text": "Packaging",
+    "category_hint": "Data exports"
+   },
+   {
+    "resource_id": "export_1258",
+    "identifiers": [
+     "daniel.park@northstar.shop"
+    ],
+    "status_text": "Ready",
+    "category_hint": "Data exports"
+   }
+  ],
+  "page_subjects": []
+ }
+}

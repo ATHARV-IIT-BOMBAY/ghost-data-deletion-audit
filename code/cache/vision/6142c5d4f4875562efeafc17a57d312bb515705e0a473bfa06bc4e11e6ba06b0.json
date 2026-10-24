@@ -1,0 +1,25 @@
+{
+ "file": "analytics_profile_view_20260713.png",
+ "model": "gemini-3.5-flash-lite",
+ "prompt_version": "cf20ae79deb6",
+ "answer": {
+  "page_title": "Pulse Analytics",
+  "records": [
+   {
+    "resource_id": "analytics_7438",
+    "identifiers": [
+     "user_20",
+     "darwish.omar@icloud.com"
+    ],
+    "status_text": "Last 90 days",
+    "category_hint": "Users"
+   }
+  ],
+  "page_subjects": [
+   {
+    "reference": "user_20",
+    "status_text": ""
+   }
+  ]
+ }
+}

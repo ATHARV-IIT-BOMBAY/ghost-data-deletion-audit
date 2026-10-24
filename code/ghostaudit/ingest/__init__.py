@@ -18,6 +18,7 @@ PARSERS = {
     ".log": "logs",
     ".txt": "documents",
     ".pdf": "documents",
+    ".png": "media",  # vision model, cached; skipped (and reported) when no key and no cache
 }
 
 
@@ -28,10 +29,20 @@ def load_evidence(dataset: Path) -> tuple[list[Observation], list[Coverage], lis
     problems: list[str] = []
     with open(dataset / "evidence_files.csv", newline="", encoding="utf-8") as f:
         manifest = list(csv.DictReader(f))
+    # Text evidence first: its resource ids (plus the activity stream's) are the vocabulary the
+    # screenshot reader is checked against.
+    manifest.sort(key=lambda r: r["file_path"].lower().endswith(".png"))
+    known_ready = False
     for row in manifest:
         path = dataset / row["file_path"]
+        if path.suffix.lower() == ".png" and not known_ready:
+            from . import media
+            with open(dataset / "system_activity.csv", newline="", encoding="utf-8") as f:
+                media.KNOWN_IDS = {o.resource_id for o in obs} | {r["resource_id"] for r in csv.DictReader(f)}
+            known_ready = True
         mod = PARSERS.get(path.suffix.lower())
-        if mod is None:  # images: handled by the model layer (Phase 3)
+        if mod is None:
+            problems.append(f"{row['file_id']} {row['file_path']}: no parser for this format")
             continue
         try:
             parser = importlib.import_module(f"{__name__}.{mod}")

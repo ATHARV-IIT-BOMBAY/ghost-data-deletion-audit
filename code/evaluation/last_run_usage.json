@@ -1,0 +1,15 @@
+{
+ "requests": 518,
+ "output": "output.csv",
+ "models_enabled": true,
+ "wall_seconds": 0.44,
+ "ingest_problems": 0,
+ "vision_rejections": 1,
+ "provider": "google-gemini",
+ "calls": 0,
+ "cache_hits": 11,
+ "failures": 0,
+ "input_tokens": 0,
+ "output_tokens": 0,
+ "per_model": {}
+}

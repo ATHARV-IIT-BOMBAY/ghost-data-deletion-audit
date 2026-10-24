@@ -1,0 +1,28 @@
+{
+ "file": "search_index_inspector_20260901.png",
+ "model": "gemini-3.5-flash-lite",
+ "prompt_version": "cf20ae79deb6",
+ "answer": {
+  "page_title": "Search Console",
+  "records": [
+   {
+    "resource_id": "search_428",
+    "identifiers": [
+     "g.silva76@gmail.com",
+     "user_13"
+    ],
+    "status_text": "",
+    "category_hint": "customer_directory_v3"
+   },
+   {
+    "resource_id": "search_1874",
+    "identifiers": [
+     "g.silva76.jr@gmail.com"
+    ],
+    "status_text": "",
+    "category_hint": "customer_directory_v3"
+   }
+  ],
+  "page_subjects": []
+ }
+}

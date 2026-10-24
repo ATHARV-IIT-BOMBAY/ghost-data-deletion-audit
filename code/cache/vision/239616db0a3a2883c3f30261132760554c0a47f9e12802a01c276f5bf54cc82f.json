@@ -1,0 +1,15 @@
+{
+ "file": "deleted_account_reference_20260310.png",
+ "model": "gemini-3.5-flash",
+ "prompt_version": "cf20ae79deb6",
+ "answer": {
+  "page_title": "Customer Reference Registry",
+  "records": [],
+  "page_subjects": [
+   {
+    "reference": "user_17",
+    "status_text": "Retained reference"
+   }
+  ]
+ }
+}

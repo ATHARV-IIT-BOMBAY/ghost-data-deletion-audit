@@ -1,0 +1,43 @@
+{
+ "file": "backup_restore_console_20260429.png",
+ "model": "gemini-3.5-flash-lite",
+ "prompt_version": "cf20ae79deb6",
+ "answer": {
+  "page_title": "Customer-platform archives",
+  "records": [
+   {
+    "resource_id": "backup_9291",
+    "identifiers": [
+     "bluepeakco@outlook.com"
+    ],
+    "status_text": "Archive",
+    "category_hint": "Archives"
+   },
+   {
+    "resource_id": "backup_9288",
+    "identifiers": [
+     "miller.logistics@company.com"
+    ],
+    "status_text": "Archive",
+    "category_hint": "Archives"
+   },
+   {
+    "resource_id": "backup_9287",
+    "identifiers": [
+     "areed1433@gmail.com"
+    ],
+    "status_text": "Archive",
+    "category_hint": "Archives"
+   },
+   {
+    "resource_id": "backup_9286",
+    "identifiers": [
+     "summit-retail@company.com"
+    ],
+    "status_text": "Archive",
+    "category_hint": "Archives"
+   }
+  ],
+  "page_subjects": []
+ }
+}

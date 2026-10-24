@@ -1,0 +1,19 @@
+{
+ "file": "support_ticket_console_20260524.png",
+ "model": "gemini-3.5-flash-lite",
+ "prompt_version": "cf20ae79deb6",
+ "answer": {
+  "page_title": "Helpline Console",
+  "records": [
+   {
+    "resource_id": "support_1034",
+    "identifiers": [
+     "kagyeman8947@fastmail.com"
+    ],
+    "status_text": "Normal priority",
+    "category_hint": "Inbox"
+   }
+  ],
+  "page_subjects": []
+ }
+}
