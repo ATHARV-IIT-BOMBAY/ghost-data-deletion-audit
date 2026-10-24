@@ -117,6 +117,7 @@ python3 -m unittest discover -s code/tests -t code -v            # 25 unit tests
 | `code/evaluation/custom_cases.py` | custom evaluation cases |
 | `code/tests/` | stdlib unit tests: schema/ordering, identity, intent gate, normalizers, engine time rule + tie-breaking, vision guards |
 | `code/POLICY.md`, `code/DECISIONS.md` | rulebook and decision log |
+| `code/docs/` | `DEFENSE.md` (interview brief), `NUMBERS.md` (every figure + command), `GOLD_DIFF.md` (every non-exact sample case) |
 
 ## Known limits
 - When several cases report at exactly the same time and their accounts carry no identifier, the
