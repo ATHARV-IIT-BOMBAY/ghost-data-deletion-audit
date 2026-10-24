@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+.DS_Store
+# submission artifacts, uploaded separately
+log.txt
+output.csv
+code.zip
+agent-trace*/
+agent-trace.zip
