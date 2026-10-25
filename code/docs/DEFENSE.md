@@ -8,13 +8,13 @@ Habit for every answer: **say the measurement, name the file and line, name the 
 |---|---|---|---|
 | Overall accuracy | samples: status **1.000**, step F1 **0.965** (P 0.995, R 0.938), row exact 0.625; dev F1 0.969; **holdout F1 0.952** | scorer `code/evaluation/main.py:94` (`score`) | holdout = every 4th case, `HOLDOUT_EVERY` `main.py:33` |
 | Versus baselines | trust `reported_status` → status 0.531; always INCOMPLETE → 0.688; both step F1 0 | `evaluation/main.py:60` (`baseline`) | — |
-| Why deterministic | all 9 finding/remediation operations F1 **1.00**; misses are verification steps only | `engine.py:251` (`audit`), `policy.py:11` (`TREATMENTS`) | — |
+| Why deterministic | all 9 finding/remediation operations F1 **1.00**; misses are verification steps only | `engine.py:253` (`audit`), `policy.py:11` (`TREATMENTS`) | — |
 | Output contract | 0 contract violations on 32 samples and 518 rows; all 32 gold rows pass the validator | `schema.py:77` (`validate_row`), `schema.py:59` (`canonicalize`) | `RESOURCE_SORT` `schema.py:42` (affects 0 rows) |
-| Linking people to records | exact normalized identifiers + catalog links + workflow events | `engine.py:118` (`link`), `models.py:91` (`ident`) | — |
-| Ties | account links 312 → **429** after the status filter; F1 0.946 → 0.965 | `engine.py:169` (`_assign`), `engine.py:61` (`STATUS_RESULTS`) | `WORKFLOW_EVENTS` `engine.py:53` (window −10..80 min) |
-| Time rule | 0 cited evidence after `audit_at` (518 rows); custom case C2 | `engine.py:114` (`_visible`) | stale-finding rule `engine.py:290` |
-| Replica drift | counts only if the same snapshot shows primary clean and replica exposed | `engine.py:225` (`state_at`), `engine.py:32` (`location`) | — |
-| Intent model | custom cases 3/6 → **6/6**; first prompt regressed sample status to 0.844, fixed | `intent.py:63` (`IntentClassifier`), `intent.py:94` | `MODEL_MIN_CONFIDENCE=0.8` `intent.py:36`, `BATCH_SIZE=25` `intent.py:37` |
+| Linking people to records | exact normalized identifiers + catalog links + workflow events | `engine.py:120` (`link`), `models.py:91` (`ident`) | — |
+| Ties | account links 312 → **429** after the status filter; F1 0.946 → 0.965 | `engine.py:171` (`_assign`), `engine.py:62` (`STATUS_RESULTS`) | `WORKFLOW_EVENTS` `engine.py:54` (window −10..80 min) |
+| Time rule | 0 cited evidence after `audit_at` (518 rows); custom case C2 | `engine.py:116` (`_visible`) | stale-finding rule `engine.py:298` |
+| Replica drift | counts only if the same snapshot shows primary clean and replica exposed | `engine.py:227` (`state_at`), `engine.py:33` (`location`) | — |
+| Intent model | custom cases 3/6 → **6/6**; first prompt regressed sample status to 0.844, fixed | `intent.py:63` (`IntentClassifier`), `intent.py:100` | `MODEL_MIN_CONFIDENCE=0.8` `intent.py:36`, `BATCH_SIZE=25` `intent.py:37` |
 | Vision guards | caught `audit_record_3` (for `_003`) and invented `marketing_4`; escalation recovered `marketing_001` | `media.py:112` (`_padding_error`), `media.py:98` (escalation) | `ESCALATION_MODEL` `llm.py:84` |
 | Cost | all calls behind `output.csv`: **189 calls, 212,234 in / 25,469 out tokens**, about $0.13 at list price, $0 billed; rerun 0 calls | `llm.py:34` (`Usage`) → `code/evaluation/last_run_usage.json` | `DEFAULT_MODEL` `llm.py:20`; pacing `MIN_INTERVAL_S` `llm.py:21` |
 | Reliability | retries only for 408/429/5xx/network, max 4; one bad file or case can't sink the run | `llm.py:24-26`, `ingest/__init__.py:25` (`load_evidence`), `main.py` per-case try | `MAX_ATTEMPTS`, `TRANSIENT` |
